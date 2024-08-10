@@ -103,14 +103,6 @@ Ready to dig deeper? Check out these resources:
 * [Documentation](https://wawp.net/help)
 
 
-== Screenshots ==
-1. Recover Abandoned Carts
-2. Send Instant Order Notifications on WhatsApp 
-3. Receive Orders on WhatsApp
-4. WhatsApp OTP Verification
-5. Messages Log Report
-
-
 == Installation ==
 
 <p>This section describes how to install the Wawp - Instant Order Notifications & OTP Verification for Woocommerce plugin and get it working.</p>
