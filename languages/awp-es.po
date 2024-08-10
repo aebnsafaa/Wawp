@@ -1,0 +1,1415 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Instant Notifcation and OTP For Woocommerce by Wawp\n"
+"POT-Creation-Date: 2024-05-30 21:42+0300\n"
+"PO-Revision-Date: 2024-05-30 21:42+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: awp.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2;esc_html__;php _e;__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/settings/general.php:2 admin/settings/general.php:37
+#: admin/wc-setting-page.php:29
+msgid "General"
+msgstr "General"
+
+#: admin/settings/general.php:3
+msgid ""
+"You can link a different WhatsApp account to send messages from a different "
+"number or add the same ID from notifications. You can also activate and "
+"disable the settings."
+msgstr ""
+"Puede vincular una cuenta de WhatsApp diferente para enviar mensajes desde "
+"un número diferente o agregar la misma ID desde las notificaciones. También "
+"puede activar y desactivar la configuración."
+
+#: admin/settings/general.php:12 class-awp-ui.php:1217
+msgid "Access Keys"
+msgstr "Claves de acceso"
+
+#: admin/settings/general.php:20
+msgid "Instance ID"
+msgstr "ID de la instancia"
+
+#: admin/settings/general.php:21
+msgid "Your Instance ID"
+msgstr "Su ID de instancia"
+
+#: admin/settings/general.php:24
+msgid "Access Token"
+msgstr "Token de Acceso"
+
+#: admin/settings/general.php:25
+msgid "Your Access Token"
+msgstr "Su token de acceso"
+
+#: admin/settings/general.php:44
+msgid "Activate login with WhatsApp"
+msgstr "Activar el inicio de sesión con WhatsApp"
+
+#: admin/settings/general.php:50
+msgid "Activate validate register with WhatsApp"
+msgstr "Activar, validar, registrarse con WhatsApp"
+
+#: admin/settings/login.php:2
+msgid "OTP Login"
+msgstr "Inicio de sesión de la OTP"
+
+#: admin/settings/login.php:3
+msgid ""
+"You can set up the Send WhatsApp login message button and customize the "
+"login message..."
+msgstr ""
+"Puede configurar el botón Enviar mensaje de inicio de sesión de WhatsApp y "
+"personalizar el mensaje de inicio de sesión..."
+
+#: admin/settings/login.php:12 admin/settings/register.php:10
+#: class-awp-ui.php:1344
+msgid "Message"
+msgstr "Mensaje"
+
+#: admin/settings/login.php:16 admin/settings/register.php:14
+msgid "Message Template for member"
+msgstr "Plantilla de mensaje para miembros"
+
+#: admin/settings/login.php:23 admin/settings/register.php:21
+#: class-checkout.php:86
+msgid "Text Shortcode"
+msgstr "Código abreviado de texto"
+
+#: admin/settings/login.php:24 class-checkout.php:87
+msgid "Member name"
+msgstr "Nombre del miembro"
+
+#: admin/settings/login.php:25 admin/settings/register.php:22
+#: class-checkout.php:88
+msgid "Generated OTP code"
+msgstr "Código OTP generado"
+
+#: admin/settings/login.php:33
+msgid "IF Login Success"
+msgstr "Éxito"
+
+#: admin/settings/login.php:39 admin/settings/register.php:36
+msgid "If empty, user will be get in my-account dashboard"
+msgstr "Si está vacío, el usuario accederá al panel de control de mi cuenta"
+
+#: admin/settings/register.php:2
+msgid "OTP Register"
+msgstr "Registro OTP"
+
+#: admin/settings/register.php:3
+msgid ""
+"You can set up a WhatsApp registration message sending button and customize "
+"the registration message..."
+msgstr ""
+"Puede configurar un botón de envío de mensajes de registro de WhatsApp y "
+"personalizar el mensaje de registro..."
+
+#: admin/settings/register.php:30
+msgid "IF Register Success"
+msgstr ""
+
+#: admin/settings/register.php:34
+msgid "URL Redirection"
+msgstr "Redirección de URL"
+
+#: admin/wc-setting-page.php:25
+msgid "Wawp OTP for Woocommerce Login & Register"
+msgstr "Wawp OTP para Woocommerce Iniciar sesión y registrarse"
+
+#: admin/wc-setting-page.php:30
+msgid "Login"
+msgstr "Iniciar sesión"
+
+#: admin/wc-setting-page.php:31
+msgid "Register"
+msgstr "Registrarse"
+
+#: admin/wc-setting-page.php:40 class-checkout.php:109
+msgid "Save Settings"
+msgstr "Guardar ajustes"
+
+#: admin/wc-setting-page.php:66 class-awp-ui.php:1270 class-checkout.php:135
+msgid "Help center"
+msgstr "Centro de ayuda"
+
+#: admin/wc-setting-page.php:73 class-awp-ui.php:1277 class-checkout.php:142
+msgid "Watch tutorials"
+msgstr "Ver tutoriales"
+
+#: admin/wc-setting-page.php:80 class-awp-ui.php:1284 class-checkout.php:149
+msgid "Join our community"
+msgstr "Únete a nuestra comunidad"
+
+#: admin/wc-setting-page.php:89 class-awp-ui.php:1293 class-checkout.php:158
+msgid "Contact us"
+msgstr "Contáctenos"
+
+#: awp.php:43
+msgid ""
+"Wawp - Instant Order Notifications & OTP Verification for WooCommerce "
+"requires WooCommerce to be installed and active."
+msgstr ""
+"Wawp - Notificaciones instantáneas de pedidos y verificación de OTP para "
+"WooCommerce requiere que WooCommerce esté instalado y activo."
+
+#: awp.php:44
+msgid "Install WooCommerce Now"
+msgstr "Instala WooCommerce ahora"
+
+#: class-awp-main.php:95 class-awp-main.php:109
+msgid "Wawp Notification Settings"
+msgstr "Configuración de notificaciones de Wawp"
+
+#: class-awp-main.php:96
+msgid "Wawp"
+msgstr "Wawp"
+
+#: class-awp-main.php:110
+msgid "Notification Settings"
+msgstr "Configuración de las notificaciones"
+
+#: class-awp-main.php:118
+msgid "Wawp Notification Message Logs"
+msgstr "Registros de mensajes de notificación de Wawp"
+
+#: class-awp-main.php:119
+msgid "Notification Logs"
+msgstr "Registros de notificaciones"
+
+#: class-awp-main.php:127 class-awp-main.php:128
+msgid "Wawp OTP Settings"
+msgstr "Configuración de Wawp OTP"
+
+#: class-awp-main.php:140 class-awp-main.php:240
+#, php-format
+msgid "Resend Message %s"
+msgstr "Reenviar mensaje %s"
+
+#: class-awp-main.php:154 class-checkout.php:99
+msgid "Wawp Checkout OTP Verification"
+msgstr "Verificación OTP de Wawp Checkout"
+
+#: class-awp-main.php:155
+msgid "Wawp Checkout OTP"
+msgstr "OTP de pago"
+
+#: class-awp-main.php:172
+msgid "WooCommerce OTP Verification Settings"
+msgstr "Configuración de las notificaciones"
+
+#: class-awp-main.php:216
+msgid "All changes has been saved!"
+msgstr "¡Todos los cambios se han guardado!"
+
+#: class-awp-main.php:225
+msgid "Message logs has been cleared!"
+msgstr "¡Se han borrado los registros de mensajes!"
+
+#: class-awp-main.php:259
+#, php-format
+msgid "Send Message %s"
+msgstr "Enviar mensaje %s"
+
+#: class-awp-main.php:267
+msgid "Notification"
+msgstr "Notificación"
+
+#: class-awp-main.php:343 class-awp-main.php:355
+msgid "Receive"
+msgstr "Recibido"
+
+#: class-awp-main.php:383 class-awp-main.php:395
+msgid "Pending"
+msgstr "Pendiente"
+
+#: class-awp-main.php:423 class-awp-main.php:435
+msgid "Processing"
+msgstr "Procesando"
+
+#: class-awp-main.php:465 class-awp-main.php:477 class-awp-ui.php:843
+msgid "Completed"
+msgstr "Completado"
+
+#: class-awp-main.php:505 class-awp-main.php:517
+msgid "Failed"
+msgstr "Fallido"
+
+#: class-awp-main.php:545 class-awp-main.php:557
+msgid "Refunded"
+msgstr "Reembolsado"
+
+#: class-awp-main.php:585 class-awp-main.php:597
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#: class-awp-main.php:851
+msgid "Sort code"
+msgstr "Tipo de cuenta"
+
+#: class-awp-main.php:1258
+msgid "Every 6 hours"
+msgstr "Cada 6 horas"
+
+#: class-awp-main.php:1262
+msgid "Every 30 minutes"
+msgstr "Cada 30 minutos"
+
+#: class-awp-main.php:1491
+msgid "Phone"
+msgstr "Teléfono"
+
+#: class-awp-main.php:1516
+msgid "We hope you like Wawp services 🥰"
+msgstr "Esperamos que te gusten los servicios 🥰 de Wawp"
+
+#: class-awp-main.php:1517
+msgid ""
+"Our mission in the automation web platform for developing web software is to "
+"improve the user experience, especially for marketers and entrepreneurs in "
+"marketing. We also improve the experience of the end user (buyer), which "
+"increases sales. If you have any opinion or evaluation of the service or our "
+"Wawp plugin, we will be happy to hear that from you."
+msgstr ""
+"Nuestra misión en la plataforma web de automatización para el desarrollo de "
+"software web es mejorar la experiencia del usuario, especialmente para los "
+"especialistas en marketing y los empresarios del marketing. También "
+"mejoramos la experiencia del usuario final (comprador), lo que aumenta las "
+"ventas. Si tienes alguna opinión o evaluación del servicio o de nuestro "
+"plugin Wawp, estaremos encantados de escucharla."
+
+#: class-awp-main.php:1518
+msgid "Add your opinion"
+msgstr "Añade tu opinión"
+
+#: class-awp-main.php:1519
+msgid "Contact us on WhatsApp"
+msgstr "Contáctanos por WhatsApp"
+
+#: class-awp-main.php:1524
+msgid "Hide Notification for a Month"
+msgstr "Notificaciones al cliente"
+
+#: class-awp-main.php:1548
+msgid "Whatsapp Number"
+msgstr "Número de Whatsapp"
+
+#: class-awp-ui.php:31 class-awp-ui.php:115
+msgid "Client Notifications"
+msgstr "Notificaciones al cliente"
+
+#: class-awp-ui.php:33
+msgid "Admin Notifications"
+msgstr "Administrar notificaciones"
+
+#: class-awp-ui.php:36
+msgid "Follow-Up"
+msgstr "Seguimiento"
+
+#: class-awp-ui.php:38 class-awp-ui.php:938
+msgid "Abandoned Cart"
+msgstr "Carrito abandonado"
+
+#: class-awp-ui.php:40 class-awp-ui.php:1014
+msgid "Other Integration"
+msgstr "Otras integraciones"
+
+#: class-awp-ui.php:43
+msgid "Help"
+msgstr "Ayuda"
+
+#: class-awp-ui.php:116
+msgid ""
+"Send notifications to your customers based on order status. It will sent "
+"instantly when the order is created or its status is changed."
+msgstr ""
+"Envía notificaciones a tus clientes en función del estado del pedido. Se "
+"enviará instantáneamente cuando se cree el pedido o se cambie su estado."
+
+#: class-awp-ui.php:122
+msgid "Default Country Code:"
+msgstr "Código de país predeterminado:"
+
+#: class-awp-ui.php:124
+msgid "Add your country code without any 00 or + ex: 2 for EG or 966 for SA  "
+msgstr ""
+"Agregue su código de país sin ningún 00 o + ej: 2 para EG o 966 para SA  "
+
+#: class-awp-ui.php:129
+msgid "Your country code"
+msgstr "El código de su país"
+
+#: class-awp-ui.php:132
+msgid ""
+"Insert country code only if your customer is from a single country. This "
+"will remove the country detection library on the old checkout page. Leave "
+"blank if your customer is from many countries."
+msgstr ""
+"Inserte el código de país solo si su cliente es de un solo país. Esto "
+"eliminará la biblioteca de detección de países en la página de pago "
+"anterior. Déjalo en blanco si tu cliente es de muchos países."
+
+#: class-awp-ui.php:157
+msgid "Default language"
+msgstr "Idioma predeterminado"
+
+#: class-awp-ui.php:159
+msgid ""
+"It works based on the primary language of the user’s WordPress account, "
+"including English, French, Italian, German, Spanish, or any other language. "
+"Just put your notification messages and let them work automatically."
+msgstr ""
+"Funciona según el idioma principal de la cuenta de WordPress del usuario, "
+"incluidos inglés, francés, italiano, alemán, español o cualquier otro "
+"idioma. Simplemente coloque sus mensajes de notificación y déjelos funcionar "
+"automáticamente."
+
+#: class-awp-ui.php:167
+msgid "Order - New (Thankyou Page):"
+msgstr "Orden - Nuevo (página de agradecimiento):"
+
+#: class-awp-ui.php:175
+msgid "Write your message in English here.."
+msgstr "Escribe tu mensaje en inglés aquí."
+
+#: class-awp-ui.php:178
+msgid "Image URL (Max 1 MB)..."
+msgstr "URL de la imagen (máx. 1 MB)..."
+
+#: class-awp-ui.php:179 class-awp-ui.php:196 class-awp-ui.php:213
+#: class-awp-ui.php:230 class-awp-ui.php:247 class-awp-ui.php:264
+#: class-awp-ui.php:281 class-awp-ui.php:298 class-awp-ui.php:315
+#: class-awp-ui.php:335 class-awp-ui.php:604 class-awp-ui.php:624
+#: class-awp-ui.php:643 class-awp-ui.php:662 class-awp-ui.php:681
+#: class-awp-ui.php:701 class-awp-ui.php:720 class-awp-ui.php:771
+#: class-awp-ui.php:797 class-awp-ui.php:824 class-awp-ui.php:857
+#: class-awp-ui.php:882 class-awp-ui.php:906 class-awp-ui.php:978
+#: class-awp-ui.php:1050 class-awp-ui.php:1070 class-awp-ui.php:1131
+msgid "Upload Image"
+msgstr "Subir imagen"
+
+#: class-awp-ui.php:183 class-awp-ui.php:200 class-awp-ui.php:217
+#: class-awp-ui.php:234 class-awp-ui.php:251 class-awp-ui.php:268
+#: class-awp-ui.php:285 class-awp-ui.php:302 class-awp-ui.php:319
+#: class-awp-ui.php:339 class-awp-ui.php:608 class-awp-ui.php:628
+#: class-awp-ui.php:647 class-awp-ui.php:666 class-awp-ui.php:685
+#: class-awp-ui.php:705 class-awp-ui.php:724 class-awp-ui.php:775
+#: class-awp-ui.php:801 class-awp-ui.php:828 class-awp-ui.php:861
+#: class-awp-ui.php:886 class-awp-ui.php:910 class-awp-ui.php:982
+#: class-awp-ui.php:1054 class-awp-ui.php:1074
+msgid "Leave blank to deactivate."
+msgstr "Déjelo en blanco para desactivarlo."
+
+#: class-awp-ui.php:187
+msgid "Order - On Hold:"
+msgstr "Orden - En espera:"
+
+#: class-awp-ui.php:192 class-awp-ui.php:209 class-awp-ui.php:226
+#: class-awp-ui.php:243 class-awp-ui.php:260 class-awp-ui.php:277
+#: class-awp-ui.php:294 class-awp-ui.php:311 class-awp-ui.php:331
+#: class-awp-ui.php:600 class-awp-ui.php:620 class-awp-ui.php:639
+#: class-awp-ui.php:658 class-awp-ui.php:677 class-awp-ui.php:697
+#: class-awp-ui.php:716 class-awp-ui.php:767 class-awp-ui.php:793
+#: class-awp-ui.php:820 class-awp-ui.php:853 class-awp-ui.php:878
+#: class-awp-ui.php:902 class-awp-ui.php:974 class-awp-ui.php:1046
+#: class-awp-ui.php:1066 class-awp-ui.php:1127
+msgid "Write your message here.."
+msgstr "Escribe tu mensaje aquí."
+
+#: class-awp-ui.php:195 class-awp-ui.php:212 class-awp-ui.php:229
+#: class-awp-ui.php:246 class-awp-ui.php:263 class-awp-ui.php:280
+#: class-awp-ui.php:297 class-awp-ui.php:314 class-awp-ui.php:334
+#: class-awp-ui.php:623 class-awp-ui.php:642 class-awp-ui.php:661
+#: class-awp-ui.php:680 class-awp-ui.php:700 class-awp-ui.php:719
+#: class-awp-ui.php:1049 class-awp-ui.php:1069
+msgid "mage URL (Max 1 MB)..."
+msgstr "URL del mago (máx. 1 MB)..."
+
+#: class-awp-ui.php:204
+msgid "Order - Processing:"
+msgstr "Pedido - Tramitación:"
+
+#: class-awp-ui.php:221
+msgid "Order - Completed:"
+msgstr "Pedido - Completado:"
+
+#: class-awp-ui.php:238
+msgid "Order - Pending Payment:"
+msgstr "Orden - Pendiente de pago:"
+
+#: class-awp-ui.php:255
+msgid "Order - Failed:"
+msgstr "Orden - Fallido:"
+
+#: class-awp-ui.php:272
+msgid "Order - Refunded:"
+msgstr "Pedido - Reembolsado:"
+
+#: class-awp-ui.php:289
+msgid "Order - Cancelled:"
+msgstr "Pedido - Cancelado:"
+
+#: class-awp-ui.php:306
+msgid "Order - Notes:"
+msgstr "Orden - Notas:"
+
+#: class-awp-ui.php:326
+#, php-format
+msgid "Order - %s:"
+msgstr "Orden - %s:"
+
+#: class-awp-ui.php:349
+msgid "اللغة العربية"
+msgstr "اللغة العربية"
+
+#: class-awp-ui.php:351
+msgid ""
+"اذا كان موقعك باللغة العربية يمكنك استخدام هذا القسم لاضافة رسائل اللغة، "
+"العربية، تعمل في حالة اذا كانت لغة الموقع الرئيسية او لغة اضافية بموقع متعدد "
+"اللغات."
+msgstr ""
+"اذا كان موقعك متعدد اللغات ولديك لغتين علي الاقل بما فيها العربية يمكنك "
+"استخدام حقل الرسائل باللغة العربية لإرسال الرسائل حسب لغة حساب مستخدم "
+"ووردبريس."
+
+#: class-awp-ui.php:358
+msgid "اشعار بعد اتمام الطلب مباشرة بواسطة العميل"
+msgstr "اشعار بعد اتمام الطلب مباشرة بواسطة العميل"
+
+#: class-awp-ui.php:365 class-awp-ui.php:384 class-awp-ui.php:403
+#: class-awp-ui.php:422 class-awp-ui.php:441 class-awp-ui.php:460
+#: class-awp-ui.php:479 class-awp-ui.php:498 class-awp-ui.php:517
+msgid "اكتب رسالتك باللغة العربية هنا.."
+msgstr "اكتب رسالتك باللغة العربية هنا.."
+
+#: class-awp-ui.php:368 class-awp-ui.php:387 class-awp-ui.php:406
+#: class-awp-ui.php:425 class-awp-ui.php:444 class-awp-ui.php:463
+#: class-awp-ui.php:482 class-awp-ui.php:501 class-awp-ui.php:520
+msgid "رابط الصورة (الحجم الاقصي 1 MB)..."
+msgstr "رابط الصورة (الحجم الاقصي 1 MB)..."
+
+#: class-awp-ui.php:369 class-awp-ui.php:388 class-awp-ui.php:407
+#: class-awp-ui.php:426 class-awp-ui.php:445 class-awp-ui.php:464
+#: class-awp-ui.php:483 class-awp-ui.php:502 class-awp-ui.php:521
+msgid "رفع الصورة"
+msgstr "رفع الصورة"
+
+#: class-awp-ui.php:373 class-awp-ui.php:392 class-awp-ui.php:411
+#: class-awp-ui.php:430 class-awp-ui.php:449 class-awp-ui.php:468
+#: class-awp-ui.php:487 class-awp-ui.php:506 class-awp-ui.php:525
+msgid "اتركها فارغة لتعطيلها."
+msgstr "اتركها فارغة لتعطيلها."
+
+#: class-awp-ui.php:377
+msgid "اشعار الطلب قيد الانتظار"
+msgstr "اشعار الطلب قيد الانتظار"
+
+#: class-awp-ui.php:396
+msgid "اشعار الطلب قيد التنفيذ"
+msgstr "اشعار الطلب قيد التنفيذ"
+
+#: class-awp-ui.php:415
+msgid "اشعار الطلب المكتمل"
+msgstr "اشعار الطلب المكتمل"
+
+#: class-awp-ui.php:434
+msgid "اشعار الطلب بإنتظار الدفع"
+msgstr "اشعار الطلب بإنتظار الدفع"
+
+#: class-awp-ui.php:453
+msgid "اشعار الطلب فشل"
+msgstr "اشعار الطلب فشل"
+
+#: class-awp-ui.php:472
+msgid "اشعار الطلب مُسترد"
+msgstr "اشعار الطلب مُسترد"
+
+#: class-awp-ui.php:491
+msgid "اشعار الطلب ملغي"
+msgstr "اشعار الطلب ملغي"
+
+#: class-awp-ui.php:512
+#, php-format
+msgid "Order - %s (العربية):"
+msgstr "Orden - %s (العربية):"
+
+#: class-awp-ui.php:534 class-awp-ui.php:729 class-awp-ui.php:927
+#: class-awp-ui.php:1003 class-awp-ui.php:1084
+msgid "Save Changes"
+msgstr "Guardar cambios"
+
+#: class-awp-ui.php:569
+msgid "Admin Notification"
+msgstr "Notificación de administrador"
+
+#: class-awp-ui.php:570
+msgid ""
+"Receive notifications on your WhatsApp number about orders to inform you of "
+"the changes that have been made to them."
+msgstr ""
+"Recibe notificaciones en tu número de WhatsApp sobre pedidos para informarte "
+"de los cambios que se hayan realizado en los mismos."
+
+#: class-awp-ui.php:575
+msgid "Default Admin Number:"
+msgstr "Número de administrador predeterminado:"
+
+#: class-awp-ui.php:580
+msgid "Admin Number with country code"
+msgstr "Número de administrador con código de país"
+
+#: class-awp-ui.php:583
+msgid "Add your number without any 00 or + ex: 201xxxxxxx or 966xxxxxxxx"
+msgstr "Agregue su número sin ningún 00 o + ej: 201xxxxxxx o 966xxxxxxxx"
+
+#: class-awp-ui.php:595
+msgid "Admin Notification (Pending Payment):"
+msgstr "Notificación del administrador (pago pendiente):"
+
+#: class-awp-ui.php:603
+msgid "mage URL (Max 1 MB)."
+msgstr "URL del mago (máx. 1 MB)."
+
+#: class-awp-ui.php:615
+msgid "Admin Notification (failed):"
+msgstr "Notificación del administrador (error):"
+
+#: class-awp-ui.php:634
+msgid "Admin Notification (On-Hold):"
+msgstr "Notificación del administrador (en espera):"
+
+#: class-awp-ui.php:653
+msgid "Admin Notification (processing):"
+msgstr "Notificación del administrador (procesamiento):"
+
+#: class-awp-ui.php:672
+msgid "Admin Notification (completed):"
+msgstr "Notificación del administrador (completada):"
+
+#: class-awp-ui.php:692
+msgid "Admin Notification (refunded):"
+msgstr "Notificación del administrador (reembolsada):"
+
+#: class-awp-ui.php:711
+msgid "Admin Notification (cancelled):"
+msgstr "Notificación de administrador (cancelada):"
+
+#: class-awp-ui.php:740
+msgid "Follow Up"
+msgstr "Seguimiento"
+
+#: class-awp-ui.php:741
+msgid ""
+"Retarget customers with messages about orders based on their current status "
+"and after a period of time specified by you."
+msgstr ""
+"Vuelva a dirigirse a los clientes con mensajes sobre pedidos en función de "
+"su estado actual y después de un período de tiempo especificado por usted."
+
+#: class-awp-ui.php:756
+msgid "On-Hold"
+msgstr "En Espera"
+
+#: class-awp-ui.php:762
+msgid "Follow Up On-Hold Order #1:"
+msgstr "Orden de Seguimiento en Espera #1:"
+
+#: class-awp-ui.php:770 class-awp-ui.php:796 class-awp-ui.php:823
+#: class-awp-ui.php:856 class-awp-ui.php:881 class-awp-ui.php:905
+#: class-awp-ui.php:977 class-awp-ui.php:1130
+msgid "Insert image url to attach into message (Max 1 MB)"
+msgstr "Inserte la URL de la imagen para adjuntarla al mensaje (máx. 1 MB)"
+
+#: class-awp-ui.php:777 class-awp-ui.php:863
+msgid "Send Message #1 After:"
+msgstr "Enviar Mensaje #1 Después:"
+
+#: class-awp-ui.php:780 class-awp-ui.php:987
+msgid "24 Hours"
+msgstr "24 horas"
+
+#: class-awp-ui.php:788
+msgid "Follow Up On-Hold Order #2:"
+msgstr "Orden de Seguimiento en Espera #2:"
+
+#: class-awp-ui.php:803 class-awp-ui.php:888
+msgid "Send Message #2 After:"
+msgstr "Enviar Mensaje #2 Después:"
+
+#: class-awp-ui.php:806 class-awp-ui.php:866
+msgid "48 Hours"
+msgstr "48 Horas"
+
+#: class-awp-ui.php:815
+msgid "Follow Up On-Hold Order #3:"
+msgstr "Orden de Seguimiento en Espera #3:"
+
+#: class-awp-ui.php:830 class-awp-ui.php:912
+msgid "Send Message #3 After:"
+msgstr "Enviar Mensaje #3 Después:"
+
+#: class-awp-ui.php:833 class-awp-ui.php:891
+msgid "72 Hours"
+msgstr "72 Horas"
+
+#: class-awp-ui.php:848
+msgid "Follow Up Completed Order #1:"
+msgstr "Seguimiento de la Orden Completada #1:"
+
+#: class-awp-ui.php:873
+msgid "Follow Up Completed Order #2:"
+msgstr "Seguimiento de la Orden Completada #2:"
+
+#: class-awp-ui.php:897
+msgid "Follow Up Completed Order #3:"
+msgstr "Seguimiento de la Orden Completada #3:"
+
+#: class-awp-ui.php:939
+msgid ""
+"Target visitors who reached the shopping cart and entered the data but did "
+"not complete the purchase."
+msgstr ""
+"Diríjase a los visitantes que llegaron al carrito de compras e ingresaron "
+"los datos pero no completaron la compra."
+
+#: class-awp-ui.php:948
+#, php-format
+msgid ""
+"Enable abandoned cart notification by installing \"<a href=\"%s\">Cartbounty "
+"Abandoned Carts</a>\" plugin"
+msgstr ""
+"Habilite la notificación de carritos abandonados instalando el complemento "
+"\"<a href=\"%s\">Cartbounty Abandoned Carts</a>\""
+
+#: class-awp-ui.php:969
+msgid "Follow Up Abandoned Cart:"
+msgstr "Seguimiento del carrito abandonado:"
+
+#: class-awp-ui.php:982 class-awp-ui.php:1054 class-awp-ui.php:1074
+msgid "Available tags:"
+msgstr "Etiquetas disponibles:"
+
+#: class-awp-ui.php:984
+msgid "Send Message After:"
+msgstr "Enviar mensaje después de:"
+
+#: class-awp-ui.php:1015
+msgid "You can find other supported Plugins in this section."
+msgstr "Puedes encontrar otros plugins compatibles en esta sección."
+
+#: class-awp-ui.php:1024
+#, php-format
+msgid ""
+"Enable Easy Digital Downloads notification by installing \"<a href=\"%s"
+"\">Easy Digital Downloads</a>\" plugin"
+msgstr ""
+"Habilite la notificación de carritos abandonados instalando el complemento "
+"\"<a href=\"%s\">Cartbounty Abandoned Carts</a>\""
+
+#: class-awp-ui.php:1041
+msgid "Easy Digital Downloads - New Order Notification:"
+msgstr "Easy Digital Downloads - Notificación de Nuevo Pedido:"
+
+#: class-awp-ui.php:1061
+msgid "Easy Digital Downloads - Complete Order Notification:"
+msgstr "Easy Digital Downloads - Notificación completa del pedido:"
+
+#: class-awp-ui.php:1095
+msgid "Help info"
+msgstr "Información de ayuda"
+
+#: class-awp-ui.php:1096
+msgid ""
+"You can find the identifiers for order and user data to make your message "
+"more personalized. You can also send a message to any number through this "
+"section."
+msgstr ""
+"Puede encontrar los identificadores de los datos de pedido y usuario para "
+"que su mensaje sea más personalizado. También puede enviar un mensaje a "
+"cualquier número a través de esta sección."
+
+#: class-awp-ui.php:1113
+msgid "Send Test Message"
+msgstr "Enviar mensaje de prueba"
+
+#: class-awp-ui.php:1114
+msgid "You can test the service by sending WhatsApp message here:"
+msgstr "Puedes probar el servicio enviando un mensaje de WhatsApp aquí:"
+
+#: class-awp-ui.php:1117
+msgid "To:"
+msgstr "Para:"
+
+#: class-awp-ui.php:1123
+msgid "Message:"
+msgstr "Mensaje:"
+
+#: class-awp-ui.php:1134
+msgid "Send Message"
+msgstr "Enviar mensaje"
+
+#: class-awp-ui.php:1144
+msgid ""
+"Below is list of available fields you can use on notification &amp; follow-"
+"up message:"
+msgstr ""
+"A continuación se muestra una lista de campos disponibles que puede usar en "
+"el mensaje de notificación y seguimiento:"
+
+#: class-awp-ui.php:1147
+msgid "ORDER"
+msgstr "PEDIDO"
+
+#: class-awp-ui.php:1148
+msgid "Order ID:"
+msgstr "ID del pedido:"
+
+#: class-awp-ui.php:1149
+msgid "Order Key:"
+msgstr "Clave de pedido:"
+
+#: class-awp-ui.php:1150
+msgid "Order Date:"
+msgstr "Fecha del pedido:"
+
+#: class-awp-ui.php:1151
+msgid "Order Summary Link:"
+msgstr "Enlace de resumen del pedido:"
+
+#: class-awp-ui.php:1153
+msgid "Product List:"
+msgstr "Lista de productos:"
+
+#: class-awp-ui.php:1154
+msgid "Product Name:"
+msgstr "Nombre del Producto:"
+
+#: class-awp-ui.php:1155
+msgid "Order Discount:"
+msgstr "Descuento de pedido:"
+
+#: class-awp-ui.php:1156
+msgid "Cart Discount:"
+msgstr "Descuento del carrito:"
+
+#: class-awp-ui.php:1157
+msgid "Tax:"
+msgstr "Impuestos:"
+
+#: class-awp-ui.php:1158
+msgid "Currency Symbol:"
+msgstr "Símbolo de moneda:"
+
+#: class-awp-ui.php:1159
+msgid "Subtotal Amount:"
+msgstr "Monto del subtotal:"
+
+#: class-awp-ui.php:1160
+msgid "Total Amount:"
+msgstr "Cantidad Total:"
+
+#: class-awp-ui.php:1161
+msgid "Unique Transfer Code:"
+msgstr "Código de transferencia único:"
+
+#: class-awp-ui.php:1163
+msgid "BILLING DETAILS"
+msgstr "DATOS DE FACTURACIÓN"
+
+#: class-awp-ui.php:1164 class-awp-ui.php:1179
+msgid "First Name:"
+msgstr "Nombre:"
+
+#: class-awp-ui.php:1165 class-awp-ui.php:1180
+msgid "Last Name:"
+msgstr "Apellido:"
+
+#: class-awp-ui.php:1166 class-awp-ui.php:1181
+msgid "Company:"
+msgstr "Empresa:"
+
+#: class-awp-ui.php:1167 class-awp-ui.php:1182
+msgid "Address 1:"
+msgstr "Dirección 1:"
+
+#: class-awp-ui.php:1168 class-awp-ui.php:1183
+msgid "Address 2:"
+msgstr "Dirección 2:"
+
+#: class-awp-ui.php:1169 class-awp-ui.php:1184
+msgid "City:"
+msgstr "Ciudad:"
+
+#: class-awp-ui.php:1170 class-awp-ui.php:1185
+msgid "Postcode:"
+msgstr "Código Postal:"
+
+#: class-awp-ui.php:1171 class-awp-ui.php:1186
+msgid "Country:"
+msgstr "País:"
+
+#: class-awp-ui.php:1172 class-awp-ui.php:1187
+msgid "Province:"
+msgstr "Provincia:"
+
+#: class-awp-ui.php:1173
+msgid "Email:"
+msgstr "Email:"
+
+#: class-awp-ui.php:1174
+msgid "Phone:"
+msgstr "Teléfono:"
+
+#: class-awp-ui.php:1175
+msgid "Customer Note:"
+msgstr "Nota del cliente:"
+
+#: class-awp-ui.php:1178
+msgid "SHIP TO DIFFERENT ADDRESS"
+msgstr "ENVIAR A UNA DIRECCIÓN DIFERENTE"
+
+#: class-awp-ui.php:1189
+msgid "PAYMENT &amp; SHIPPING"
+msgstr "PAGO Y ENVÍO"
+
+#: class-awp-ui.php:1190
+msgid "Shipping Method:"
+msgstr "Método de envío:"
+
+#: class-awp-ui.php:1191
+msgid "Shipping Cost:"
+msgstr "Costo de envío:"
+
+#: class-awp-ui.php:1192
+msgid "Shipping Tax:"
+msgstr "Tasa de envío:"
+
+#: class-awp-ui.php:1193
+msgid "Payment Method:"
+msgstr "Método de pago:"
+
+#: class-awp-ui.php:1194
+msgid "Bank Account Info:"
+msgstr "Información de la cuenta bancaria:"
+
+#: class-awp-ui.php:1196
+msgid "INFO"
+msgstr "INFO"
+
+#: class-awp-ui.php:1197
+msgid "Shop Name:"
+msgstr "Nombre de la tienda:"
+
+#: class-awp-ui.php:1198
+msgid "Order Note:"
+msgstr "Nota de la orden:"
+
+#: class-awp-ui.php:1219
+msgid "Get your access token and instance ID on "
+msgstr "Obtenga el token de acceso y el ID de instancia en "
+
+#: class-awp-ui.php:1220
+msgid "https://app.wawp.net"
+msgstr "https://app.wawp.net"
+
+#: class-awp-ui.php:1224
+msgid "Instance ID:"
+msgstr "ID de instancia:"
+
+#: class-awp-ui.php:1227
+msgid "Access Token:"
+msgstr "Access Token:"
+
+#: class-awp-ui.php:1231
+msgid "Save ID"
+msgstr "Guardar ID"
+
+#: class-awp-ui.php:1236
+msgid "Instance Control"
+msgstr "Control de instancias"
+
+#: class-awp-ui.php:1238 class-awp-ui.php:1246
+msgid "Number Status"
+msgstr "Estado del número"
+
+#: class-awp-ui.php:1240
+msgid "Send Message Test"
+msgstr "Enviar mensaje %s"
+
+#: class-awp-ui.php:1244
+msgid "Control Description"
+msgstr "Descripción del control"
+
+#: class-awp-ui.php:1246
+msgid ""
+"A connection test is performed between the WhatsApp number and the Wawp "
+"system to inform you of the result whether it is connected or not"
+msgstr ""
+"Se realiza una prueba de conexión entre el número de WhatsApp y el sistema "
+"Wawp para informarte del resultado si está conectado o no"
+
+#: class-awp-ui.php:1248
+msgid "Connection test"
+msgstr "Prueba de conexión"
+
+#: class-awp-ui.php:1248
+msgid ""
+"A WhatsApp message is sent from your number registered with Wawp and added "
+"to the WordPress plugin settings (account ID and access Token) to the Wawp "
+"Bot number to verify that the plugin is active and notifications are sent "
+"normally."
+msgstr ""
+"Se envía un mensaje de WhatsApp desde su número registrado en Wawp y se "
+"agrega a la configuración del complemento de WordPress (ID de cuenta y token "
+"de acceso) al número de Wawp Bot para verificar que el complemento esté "
+"activo y las notificaciones se envíen normalmente."
+
+#: class-awp-ui.php:1259 class-checkout.php:124
+msgid "⚡How to Connect WhatsApp number to using Wawp QR code?"
+msgstr "⚡¿Cómo conectar el número de WhatsApp usando el código QR de Wawp?"
+
+#: class-awp-ui.php:1260 class-checkout.php:125
+msgid "🔗How to Link WooCommerce plugin using Instance ID"
+msgstr "🔗Cómo vincular el plugin de WooCommerce usando el ID de instancia"
+
+#: class-awp-ui.php:1261 class-checkout.php:126
+msgid "🗂️WAWP WooCommerce Plugin Docs"
+msgstr "🗂️Documentos del plugin WAWP WooCommerce"
+
+#: class-awp-ui.php:1319
+msgid "Logs cleared successfully."
+msgstr "Los registros se borraron correctamente."
+
+#: class-awp-ui.php:1335
+msgid "Search in log:"
+msgstr "Buscar en el registro:"
+
+#: class-awp-ui.php:1336
+msgid "Type to search...Date/WhatsApp Number/Message/Image Attachment/Status"
+msgstr ""
+"Escriba para buscar... Fecha/Número de WhatsApp/Mensaje/Archivo adjunto de "
+"imagen/Estado"
+
+#: class-awp-ui.php:1342
+msgid "Date"
+msgstr "Fecha"
+
+#: class-awp-ui.php:1343
+msgid "WhatsApp Number"
+msgstr "Número WhatsApp"
+
+#: class-awp-ui.php:1345
+msgid "Image Attachment"
+msgstr "Adjuntar imagen"
+
+#: class-awp-ui.php:1346
+msgid "Plugin status"
+msgstr "Estado del plugin"
+
+#: class-awp-ui.php:1347
+msgid "wawp.net status"
+msgstr "Estado wawp.net"
+
+#: class-awp-ui.php:1348 class-checkout.php:312
+msgid "Resend"
+msgstr "Reenviar"
+
+#: class-checkout.php:24 class-checkout.php:412
+msgid "OTP verified successfully."
+msgstr "Los registros se borraron correctamente."
+
+#: class-checkout.php:26 class-checkout.php:414
+msgid "Incorrect OTP. Please try again."
+msgstr "OTP incorrecta. Por favor, inténtelo de nuevo."
+
+#: class-checkout.php:51
+msgid "Settings"
+msgstr "Ajustes"
+
+#: class-checkout.php:52
+msgid "Enable Checkout OTP Verification"
+msgstr "Habilitar la verificación OTP de pago"
+
+#: class-checkout.php:53
+msgid "Enable Checkout OTP Verification for Visitors Only"
+msgstr "Habilitar la verificación OTP de pago solo para visitantes"
+
+#: class-checkout.php:54
+msgid "Checkout OTP Message Template"
+msgstr "Plantilla de mensaje OTP de pago"
+
+#: class-checkout.php:55
+msgid "Blocked Phone Numbers"
+msgstr "Números de teléfono bloqueados"
+
+#: class-checkout.php:61
+msgid "Enter blocked phone numbers separated by commas."
+msgstr "Introduzca los números de teléfono bloqueados separados por comas."
+
+#: class-checkout.php:101
+msgid "Checkout OTP"
+msgstr "OTP de pago"
+
+#: class-checkout.php:102
+msgid ""
+"You can activate number verification on the checkout page using the OTP code"
+msgstr ""
+"Puede activar la verificación del número en la página de pago utilizando el "
+"código OTP"
+
+#: class-checkout.php:204
+msgid "Blocked numbers saved successfully."
+msgstr "Los registros se borraron correctamente."
+
+#: class-checkout.php:233 class-checkout.php:326
+msgid "Phone number is missing."
+msgstr "Falta el número de teléfono."
+
+#: class-checkout.php:242 class-checkout.php:334
+msgid "This phone number is blocked."
+msgstr "Este número de teléfono está bloqueado."
+
+#: class-checkout.php:254
+msgid "Phone number matches user account and is verified."
+msgstr ""
+"El número de teléfono coincide con la cuenta de usuario y está verificado."
+
+#: class-checkout.php:268
+msgid "This phone number is already registered. Please use a different number."
+msgstr ""
+"Este número de teléfono ya está registrado. Por favor, utilice un número "
+"diferente."
+
+#: class-checkout.php:273
+msgid "Phone number is not registered."
+msgstr "El número de teléfono no está registrado."
+
+#: class-checkout.php:289
+msgid "This phone number is blocked. Please use a different number."
+msgstr ""
+"Este número de teléfono está bloqueado. Por favor, utilice un número "
+"diferente."
+
+#: class-checkout.php:299
+msgid "OTP Verification"
+msgstr "Verificación de OTP"
+
+#: class-checkout.php:300
+msgid "OTP code has been sent to your WhatsApp number"
+msgstr "El código OTP ha sido enviado a su número de WhatsApp"
+
+#: class-checkout.php:301
+msgid "If this is not your phone number, please change it."
+msgstr "Si este no es su número de teléfono, cámbielo."
+
+#: class-checkout.php:311
+msgid "Verify"
+msgstr "Verificar"
+
+#: class-checkout.php:348 class-checkout.php:349
+msgid "Instance ID or Access Token is missing."
+msgstr "Falta el ID de instancia o el token de acceso."
+
+#: class-checkout.php:380 class-checkout.php:381
+msgid "Failed to send OTP via WhatsApp. Error: "
+msgstr "No se pudo enviar OTP a través de WhatsApp. Error: "
+
+#: class-checkout.php:389
+msgid "Failed to send OTP via WhatsApp. Response: "
+msgstr "No se pudo enviar OTP a través de WhatsApp. Respuesta: "
+
+#: class-checkout.php:391
+msgid "OTP sent successfully via WhatsApp."
+msgstr "OTP enviado con éxito a través de WhatsApp."
+
+#: class-checkout.php:421
+msgid "Please verify the OTP before placing your order."
+msgstr "Verifique la OTP antes de realizar su pedido."
+
+#: class-login.php:48 class-register.php:44
+msgid "Your WhatsApp Number"
+msgstr "Tu número de WhatsApp"
+
+#: class-login.php:63
+msgid "send otp"
+msgstr "Enviar OTP"
+
+#: class-login.php:66 class-register.php:80
+msgid "OTP"
+msgstr "OTP"
+
+#: class-login.php:71
+msgid "Remember me"
+msgstr "Recuérdame"
+
+#: class-login.php:75 class-login.php:80
+msgid "Log in"
+msgstr "Iniciar sesión"
+
+#: class-login.php:84 class-login.php:88
+msgid "Login via WhatsApp"
+msgstr "Iniciar sesión a través de WhatsApp"
+
+#: class-login.php:95 class-login.php:100
+msgid "Login via Email & Password"
+msgstr "Iniciar sesión por correo electrónico"
+
+#: class-login.php:178 class-register.php:114
+msgid "Failed to send passkey. Please try again or contact administrator."
+msgstr ""
+
+#: class-login.php:184 class-register.php:120
+msgid "Request sent! Check your WhatsApp."
+msgstr ""
+
+#: class-login.php:192
+msgid ""
+"This number is not registered on this site. Please try again with a valid "
+"number or register."
+msgstr ""
+
+#: class-login.php:199 class-register.php:128
+msgid "WhatsApp number is not provided."
+msgstr "El número de teléfono no está registrado."
+
+#: class-login.php:233 class-register.php:274
+msgid "Success!"
+msgstr "Éxito"
+
+#: class-login.php:241
+msgid "Something wrong with your login"
+msgstr "Algo anda mal con su registro"
+
+#: class-login.php:248
+msgid "Mismatch passkey. Try again."
+msgstr ""
+
+#: class-register.php:76
+msgid "Send OTP"
+msgstr "Enviar OTP"
+
+#: class-register.php:135 class-register.php:221
+msgid "Your WhatsApp number may not be valid. Please recheck."
+msgstr ""
+
+#: class-register.php:209
+msgid "This email is already registered."
+msgstr ""
+
+#: class-register.php:213
+msgid "This WhatsApp number is already registered."
+msgstr "El número de teléfono no está registrado."
+
+#: class-register.php:217
+msgid "This username is already taken."
+msgstr ""
+
+#: class-register.php:225
+msgid "Your session has expired. Please reload the page and try again."
+msgstr ""
+
+#: class-register.php:281
+msgid "Something went wrong with your registration."
+msgstr "Algo anda mal con su registro"
+
+#: class-register.php:294
+msgid "Email is required."
+msgstr ""
+
+#: class-register.php:297
+msgid "Phone number is required."
+msgstr "El número de teléfono no está registrado."
+
+#: class-register.php:300
+msgid "OTP code is required."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Wawp - Instant Order Notifications & OTP Verification for Woocommerce"
+msgstr "Notificación instantánea y OTP para Woocommerce de Wawp"
+
+#. Plugin URI of the plugin/theme
+msgid "https://wawp.net/whatsapp-for-woocommerce/"
+msgstr "https://wawp.net/whatsapp-for-woocommerce/"
+
+#. Description of the plugin/theme
+msgid ""
+"Notify your customers about orders and abandoned carts via \"WhatsApp\" or "
+"\"WhatsApp Business\", for woocommerce system and enable Login & register "
+"for user by otp Code for WordPress"
+msgstr ""
+"Notifique a sus clientes sobre pedidos y carritos abandonados a través de "
+"\"WhatsApp\" o \"WhatsApp Business\", para el sistema woocommerce y habilite "
+"el inicio de sesión y el registro para el usuario mediante el código otp "
+"para Wordpress"
+
+#. Author of the plugin/theme
+msgid "wawp.net"
+msgstr "wawp.net"
+
+#. Author URI of the plugin/theme
+msgid "https://wawp.net"
+msgstr "https://wawp.net"
+
+#~ msgid "OTP Button"
+#~ msgstr "Botón OTP"
+
+#~ msgid "Send OTP Button Text"
+#~ msgstr "Enviar texto de botón OTP"
+
+#~ msgid "Login Button Text"
+#~ msgstr "Texto del botón de inicio de sesión"
+
+#~ msgid "Error Responses"
+#~ msgstr "Respuestas de error"
+
+#~ msgid ""
+#~ "OTP code has been sent to your WhatsApp number <span id="
+#~ "\"user_phone_number\" style=\"text-decoration: underline;\"></span>."
+#~ msgstr ""
+#~ "El código OTP ha sido enviado a su número de <span id=\"user_phone_number"
+#~ "\" style=\"text-decoration: underline;\"></span>WhatsApp ."
+
+#~ msgid "Let member choose the country code"
+#~ msgstr "Permitir que el miembro elija el código de país"
+
+#~ msgid "Default Country"
+#~ msgstr "País predeterminado"
+
+#~ msgid "Image Attachment (Max 1 MB)"
+#~ msgstr "Archivo adjunto de imagen (máx. 1 MB)"
+
+#~ msgid "WhatsApp Notification"
+#~ msgstr "Notificación de WhatsApp"
+
+#~ msgid ""
+#~ "Send WhatsApp message to specific number after submit form<br>These are "
+#~ "following tags you can use:"
+#~ msgstr ""
+#~ "Enviar mensaje de WhatsApp a un número específico después de enviar el "
+#~ "formulario<br>Estas son las siguientes etiquetas que puede utilizar:"
+
+#~ msgid "Add country code without (+) sign before number"
+#~ msgstr "Agregue el código de país sin el signo (+) antes del número"
+
+#~ msgid "Image Attachment:"
+#~ msgstr "Archivo adjunto de imagen:"
+
+#~ msgid "awpsend"
+#~ msgstr "awpsend"
+
+#~ msgid "awp"
+#~ msgstr "AWP"
+
+#~ msgid "WhatsApp Phone"
+#~ msgstr "WhatsApp"
+
+#~ msgid "62899999999"
+#~ msgstr "62899999999"
+
+#~ msgid ""
+#~ "Type WhatsApp Number with country code (e.g: 62XXXXXXXX) or use number "
+#~ "field shortcode."
+#~ msgstr ""
+#~ "Escriba el número de WhatsApp con el código de país (por ejemplo: "
+#~ "62XXXXXXXX) o use el código corto del campo numérico."
+
+#~ msgid "WhatsApp Message"
+#~ msgstr "Mensaje de WhatsApp"
+
+#~ msgid "Type your own text or use available fields shortcode."
+#~ msgstr ""
+#~ "Escriba su propio texto o utilice el código abreviado de los campos "
+#~ "disponibles."
+
+#~ msgid "Insert your own message with available fields shortcode."
+#~ msgstr ""
+#~ "Inserte su propio mensaje con el código abreviado de los campos "
+#~ "disponibles."
+
+#~ msgid "WhatsApp Image (Optional)"
+#~ msgstr "Imagen de WhatsApp (opcional)"
+
+#~ msgid ".jpg/.png"
+#~ msgstr ".jpg/.png"
+
+#~ msgid "Insert image url or image field shortcode if needed (optional)."
+#~ msgstr ""
+#~ "Inserte la URL de la imagen o el código abreviado del campo de la imagen "
+#~ "si es necesario (opcional)."
+
+#~ msgid "Select Country Code"
+#~ msgstr "Seleccione el código de país"
+
+#~ msgid "Wawp "
+#~ msgstr "Wawp "
+
+#~ msgid "awp New Caldera Forms"
+#~ msgstr "awp Nuevas formas de Caldera"
+
+#~ msgid ""
+#~ "Caldera Processor to send WhatsApp message after filling out the form"
+#~ msgstr ""
+#~ "Procesador Caldera para enviar mensajes de WhatsApp después de completar "
+#~ "el formulario"
+
+#~ msgid "اترك الحقول فارغة لتعطيلها."
+#~ msgstr "اترك الحقول فارغة لتعطيلها."
+
+#~ msgid "Pending Payment"
+#~ msgstr "في انتظار الدفع"
+
+#~ msgid "Credential"
+#~ msgstr "بيانات الإتصال"
+
+#~ msgid "Get your access token and instance ID on"
+#~ msgstr "احصل على رمز الوصول ومعرف الحساب"
+
+#~ msgid "Check Connection"
+#~ msgstr "التحقق من الاتصال"
+
+#~ msgid "Wawp Settings"
+#~ msgstr "اعدادات WAWP"
+
+#~ msgid "Follow Up Abandoned Cart After:"
+#~ msgstr "متابعة عربة التسوق المتروكة بعد:"
+
+#~ msgid "Status"
+#~ msgstr "حالة الاتصال بالرقم"
+
+#~ msgid "Check connection status. Only works if you have set a profile photo:"
+#~ msgstr ""
+#~ "Compruebe el estado de la conexión. Solo funciona si has establecido una "
+#~ "foto de perfil:"
+
+#~ msgid "Set Webhook"
+#~ msgstr "تم تعيين Webhook"
+
+#~ msgid ""
+#~ "Set webhook url to get all return values from Whatsapp, like connection "
+#~ "status, incoming message, outgoing message, disconnected, change battery, "
+#~ "etc"
+#~ msgstr ""
+#~ ": أعد بدء الاتصال من التطبيق إلى WhatsApp Web عند فقد الاتصال <br> "
+#~ "<strong> إعادة التشغيل </ strong>: تسجيل الخروج WhatsApp Web وإجراء فحص "
+#~ "جديد <br> <strong> إعادة تعيين </ strong>: سيؤدي هذا إلى تسجيل الخروج من "
+#~ "WhatsApp Web أو تغيير معرف المثيل أو حذف كافة بيانات المثيل القديمة <br> "
+#~ "<strong> الحالة </ strong>: تحقق من حالة الاتصال. يعمل فقط إذا قمت بتعيين "
+#~ "صورة للملف الشخصي <br> <strong> تعيين Webhook </strong>: قم بتعيين عنوان "
+#~ "url للخطاف على الويب للحصول على جميع قيم الإرجاع من Whatsapp ، مثل حالة "
+#~ "الاتصال ، والرسالة الواردة ، والرسالة الصادرة ، وغير متصل ، وتغيير "
+#~ "البطارية ، إلخ"
