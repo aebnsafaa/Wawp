@@ -65,7 +65,7 @@ class WWO {
 	 * Class constructor. Initializes settings and includes necessary files based on settings.
 	 */
 	public function __construct() {
-		$settings = get_option( 'wwo_settings' );
+		$settings     = get_option( 'wwo_settings' );
 		$access_token = isset( $settings['general']['access_token'] ) ? $settings['general']['access_token'] : null;
 		$instance_id  = isset( $settings['general']['instance_id'] ) ? $settings['general']['instance_id'] : null;
 		$this->set_access_token( $access_token );
@@ -89,12 +89,12 @@ class WWO {
 	 */
 	public function settings() {
 		$hook = add_menu_page(
-			'Wawp OTP',
-			'Wawp OTP',
+			esc_html__( 'Wawp OTP', 'awp' ),
+			esc_html__( 'Wawp OTP', 'awp' ),
 			'manage_options',
 			'awp-otp',
 			array( $this, 'setting_page' ),
-			WWO_URL . 'assets/img/menu.png',
+			esc_url( WWO_URL . 'assets/img/menu.png' ),
 			101
 		);
 		remove_menu_page( 'awp-otp' );
@@ -104,7 +104,7 @@ class WWO {
 	 * Display the settings page content.
 	 */
 	public function setting_page() {
-		include 'admin/wc-setting-page.php';
+		include_once 'admin/wc-setting-page.php';
 	}
 
 	/**
@@ -136,7 +136,7 @@ class WWO {
 			wp_enqueue_script( 'sweetalert2-js', plugins_url( 'assets/js/resources/sweetalert2.min.js', __FILE__ ), array(), true, true, '11.4.35' );
 			wp_enqueue_script( 'select2', plugins_url( 'assets/js/resources/select2.js', __FILE__ ), array(), true, true, '4.1.0' );
 
-			wp_enqueue_script( 'admin-script', WWO_URL . '/assets/js/admin.js', array( 'jquery' ), true, true );
+			wp_enqueue_script( 'admin-script', esc_url( WWO_URL . '/assets/js/admin.js' ), array( 'jquery' ), true, true );
 			if ( is_rtl() ) {
 				// Enqueue RTL versions of your CSS files here.
 				wp_enqueue_style( 'otp-rtl-css', plugins_url( '/assets/css/otp-rtl.css', __FILE__ ), array(), '5.2.3' );
@@ -176,33 +176,34 @@ class WWO {
 	 */
 	public function wawp_consent_banner() {
 		$current_screen = get_current_screen();
-		$allowed_pages = array(
-			'toplevel_page_awp-settings', 
-			'toplevel_page_awp-countrycode', 
-			'toplevel_page_awp', 
-			'toplevel_page_awp-otp', 
-			'toplevel_page_awp-checkout-otp', 
+		$allowed_pages  = array(
+			'toplevel_page_awp-settings',
+			'toplevel_page_awp-countrycode',
+			'toplevel_page_awp',
+			'toplevel_page_awp-otp',
+			'toplevel_page_awp-checkout-otp',
 			'awp_page_awp-message-log',
-			'toplevel_page_awp-system-status-info'
+			'toplevel_page_awp-system-status-info',
 		);
 
-		if ( ! in_array( $current_screen->id, $allowed_pages ) && ! ( isset( $_GET['page'] ) && $_GET['page'] === 'awp-message-log' ) ) {
+		if ( ! in_array( $current_screen->id, $allowed_pages, true ) && ! ( isset( $_GET['page'] ) && 'awp-message-log' === $_GET['page'] ) ) {
 			return;
 		}
 
+		// Output HTML
 		echo '<div id="wawp-consent-banner">' .
-				'<div class="wawp-banner"><p class="promo">' . __('Upgrade Now to Wawp Pro. Use the code <strong>“Wawp50”</strong> to get 50% off.', 'awp') . '</p></div>' .
+				'<div class="wawp-banner"><p class="promo">' . esc_html__( 'Upgrade Now to Wawp Pro. Use the code <strong>“Wawp50”</strong> to get 50% off.', 'awp' ) . '</p></div>' .
 				'<div class="wawp-header">' .
 					'<div class="wawp-topbar">' .
 						'<div class="wawp-logo">' .
-							'<a href="https://wawp.net" title="Wawp" target="_blank"><img style="height: 54px;" src="' . plugins_url('assets/img/wawp-logo.png', __FILE__) . '"></a>' .
-							'<h1 class="title-text">' . get_admin_page_title() . '</h1>' .
+							'<a href="https://wawp.net" title="Wawp" target="_blank"><img style="height: 54px;" src="' . esc_url( plugins_url( 'assets/img/wawp-logo.png', __FILE__ ) ) . '" alt="Wawp logo"></a>' .
+							'<h1 class="title-text">' . esc_html( get_admin_page_title() ) . '</h1>' .
 						'</div>' .
 						'<div class="wawp-links">' .
 							'<div class="links-box">' .
-								'<a href="https://wawp.net/whatsapp-text-formatter/" target="_blank" class="hint-btn">' . __('Text formatting', 'awp') . '</a>' .
-								'<a href="https://www.facebook.com/groups/894016848870156" target="_blank" class="hint-btn">' . __('Support', 'awp') . '</a>' .
-								'<a href="https://wawp.net/pricing/" target="_blank" class="hint-btn pro"><img style="margin-right: 6px;" src="' . plugins_url('assets/img/star.png', __FILE__) . '">' . __('Try Wawp Pro', 'awp') . '</a>' .
+								'<a href="https://wawp.net/whatsapp-text-formatter/" target="_blank" class="hint-btn">' . esc_html__( 'Text formatting', 'awp' ) . '</a>' .
+								'<a href="https://www.facebook.com/groups/894016848870156" target="_blank" class="hint-btn">' . esc_html__( 'Support', 'awp' ) . '</a>' .
+								'<a href="https://wawp.net/pricing/" target="_blank" class="hint-btn pro"><img style="margin-right: 6px;" src="' . esc_url( plugins_url( 'assets/img/star.png', __FILE__ ) ) . '" alt="Star icon">' . esc_html__( 'Try Wawp Pro', 'awp' ) . '</a>' .
 							'</div>' .
 						'</div>' .
 					'</div>' .
@@ -234,24 +235,26 @@ class WWO {
 	 */
 	public function wawp_consent_footer() {
 		$current_screen = get_current_screen();
-		$allowed_pages = array(
-			'toplevel_page_awp-settings', 
-			'toplevel_page_awp-countrycode', 
-			'toplevel_page_awp', 
-			'toplevel_page_awp-otp', 
-			'toplevel_page_awp-checkout-otp', 
+		$allowed_pages  = array(
+			'toplevel_page_awp-settings',
+			'toplevel_page_awp-countrycode',
+			'toplevel_page_awp',
+			'toplevel_page_awp-otp',
+			'toplevel_page_awp-checkout-otp',
 			'awp_page_awp-message-log',
-			'toplevel_page_awp-system-status-info'
+			'toplevel_page_awp-system-status-info',
 		);
 
-		if ( ! in_array( $current_screen->id, $allowed_pages ) && ! ( isset( $_GET['page'] ) && $_GET['page'] === 'awp-message-log' ) ) {
+		if ( ! in_array( $current_screen->id, $allowed_pages, true ) && ! ( isset( $_GET['page'] ) && 'awp-message-log' === $_GET['page'] ) ) {
 			return;
 		}
+
+		// Output HTML
 
 		echo '<div id="wawp-consent-footer">' .
 				'<div id="footer" role="contentinfo">' .
 					'<div class="Wawp-footer-promotion">' .
-						'<p>' . __('Made with ♥ by the Wawp Team', 'awp') . '</p>' .
+						'<p>' . __( 'Made with ♥ by the Wawp Team', 'awp' ) . '</p>' .
 						'<div class="Wawp-footer-social">' .
 							'<a href="https://www.facebook.com/wawpapp" target="_blank" rel="noopener noreferrer">' .
 								'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.001 2C6.47813 2 2.00098 6.47715 2.00098 12C2.00098 16.9913 5.65783 21.1283 10.4385 21.8785V14.8906H7.89941V12H10.4385V9.79688C10.4385 7.29063 11.9314 5.90625 14.2156 5.90625C15.3097 5.90625 16.4541 6.10156 16.4541 6.10156V8.5625H15.1931C13.9509 8.5625 13.5635 9.33334 13.5635 10.1242V12H16.3369L15.8936 14.8906H13.5635V21.8785C18.3441 21.1283 22.001 16.9913 22.001 12C22.001 6.47715 17.5238 2 12.001 2Z"></path></svg>' .
@@ -269,9 +272,9 @@ class WWO {
 					'</div>' .
 					'<p id="footer-left">' .
 						sprintf(
-							__('Please rate <strong>Wawp</strong> <a href="%s" target="_blank" rel="noopener noreferrer">★★★★★</a> on <a href="%s" target="_blank" rel="noopener noreferrer">WordPress.org</a> to help us spread the word.', 'awp'), 
-							esc_url('https://wordpress.org/support/plugin/automation-web-platform/reviews/?filter=5#new-post'), 
-							esc_url('https://wordpress.org/support/plugin/automation-web-platform/reviews/?filter=5#new-post')
+							__( 'Please rate <strong>Wawp</strong> <a href="%1$s" target="_blank" rel="noopener noreferrer">★★★★★</a> on <a href="%2$s" target="_blank" rel="noopener noreferrer">WordPress.org</a> to help us spread the word.', 'awp' ),
+							esc_url( 'https://wordpress.org/support/plugin/automation-web-platform/reviews/?filter=5#new-post' ),
+							esc_url( 'https://wordpress.org/support/plugin/automation-web-platform/reviews/?filter=5#new-post' )
 						) .
 					'</p>' .
 				'</div>' .

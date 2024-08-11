@@ -76,7 +76,7 @@ class awp_UI {
 											</div>
 			</div>
 		</div>
-        <?php
+		<?php
 	}
 
 	public function notification_settings() {
@@ -105,8 +105,8 @@ class awp_UI {
 		<?php settings_fields( 'awp_storage_notifications' ); ?>
 
 			<div class="info-banner">
-    			<p class="banner-text"><?php esc_html_e( 'Send real-time WhatsApp messages to your customers based on order status changes or new order creations.', 'awp' ); ?></p>
-    			<input type="submit" class="button-primarywa saveit top" value="<?php esc_html_e( 'Save Changes', 'awp' ); ?>">
+				<p class="banner-text"><?php esc_html_e( 'Send real-time WhatsApp messages to your customers based on order status changes or new order creations.', 'awp' ); ?></p>
+				<input type="submit" class="button-primarywa saveit top" value="<?php esc_html_e( 'Save Changes', 'awp' ); ?>">
 			</div>
 			<hr class="line">
 
@@ -131,19 +131,19 @@ class awp_UI {
 
 <!-- Add tabs for Arabic and English editors -->
 <div class="editor-tabs">
-    <h3 class="editor-title"><?php _e('Customer language:', 'awp'); ?></h3>
-    <div class="editor-tab" data-lang="english"><?php _e('Default', 'awp'); ?></div>
-    <div class="editor-tab" data-lang="arabic"><?php _e('Arabic', 'awp'); ?></div>
+	<h3 class="editor-title"><?php _e( 'Customer language:', 'awp' ); ?></h3>
+	<div class="editor-tab" data-lang="english"><?php _e( 'Default', 'awp' ); ?></div>
+	<div class="editor-tab" data-lang="arabic"><?php _e( 'Arabic', 'awp' ); ?></div>
 </div>
 
 
 <div class="editor-content layout-en" data-lang="english">
-<?php
-$blank = __("leave blank to deactivate", "awp");
-$txt_placeholder = __("Write your message...", "awp");
-$img_format = __("Accepts .png, .jpg, .jpeg", "awp");
-$upload_btn = __("Upload image", "awp");
-?>
+		<?php
+		$blank           = __( 'leave blank to deactivate', 'awp' );
+		$txt_placeholder = __( 'Write your message...', 'awp' );
+		$img_format      = __( 'Accepts .png, .jpg, .jpeg', 'awp' );
+		$upload_btn      = __( 'Upload image', 'awp' );
+		?>
 
 	
 	<div class="notification-form english hint">
@@ -157,19 +157,19 @@ $upload_btn = __("Upload image", "awp");
 	<div class="notification-form english">
 		<div class="heading-bar">
 			<label for="awp_notifications[order_onhold]" class="notification-title"><?php esc_html_e( 'Order on hold', 'awp' ); ?>
-                <span class="tooltip-text"><?php esc_html_e( 'Sent when an order is awaiting payment confirmation.', 'awp' ); ?></span>
-            </label>
+				<span class="tooltip-text"><?php esc_html_e( 'Sent when an order is awaiting payment confirmation.', 'awp' ); ?></span>
+			</label>
 			<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
 		</div>
 		<hr class="line">
 		<div class="notification">
 			<div class="form">
-			    <div class="dropdowns">
-			        <!-- Placeholder Dropdown Container -->
-                    <div class="placeholder-container"></div>
-                    <!-- Placeholder Dropdown Container (Message Templates) -->
-                    <div class="message-template-container"></div>
-                </div>
+				<div class="dropdowns">
+					<!-- Placeholder Dropdown Container -->
+					<div class="placeholder-container"></div>
+					<!-- Placeholder Dropdown Container (Message Templates) -->
+					<div class="message-template-container"></div>
+				</div>
 				<!-- Add textareas for  English messages -->
 				<textarea id="awp_notifications[order_onhold]" name="awp_notifications[order_onhold]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['order_onhold'] ) ? esc_textarea( $this->notif['order_onhold'] ) : ''; ?></textarea>
 				<div class="upload-field">
@@ -183,19 +183,19 @@ $upload_btn = __("Upload image", "awp");
 	<div class="notification-form english">
 		<div class="heading-bar">
 			<label for="awp_notifications[order_processing]" class="notification-title"><?php esc_html_e( 'Order processing', 'awp' ); ?>
-                <span class="tooltip-text"><?php esc_html_e( 'Sent when you mark an order as awaiting fulfillment. ', 'awp' ); ?></span>
-            </label>
+				<span class="tooltip-text"><?php esc_html_e( 'Sent when you mark an order as awaiting fulfillment. ', 'awp' ); ?></span>
+			</label>
 			<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
 		</div>
 		<hr class="line">
 		<div class="notification">
 			<div class="form">
-			    <div class="dropdowns">
-			        <!-- Placeholder Dropdown Container -->
-                    <div class="placeholder-container"></div>
-                    <!-- Placeholder Dropdown Container (Message Templates) -->
-                    <div class="message-template-container"></div>
-                </div>
+				<div class="dropdowns">
+					<!-- Placeholder Dropdown Container -->
+					<div class="placeholder-container"></div>
+					<!-- Placeholder Dropdown Container (Message Templates) -->
+					<div class="message-template-container"></div>
+				</div>
 				<!-- Add textareas for  English messages -->
 				<textarea id="awp_notifications[order_processing]" name="awp_notifications[order_processing]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['order_processing'] ) ? esc_textarea( $this->notif['order_processing'] ) : ''; ?></textarea>
 				<div class="upload-field">
@@ -209,19 +209,19 @@ $upload_btn = __("Upload image", "awp");
 	<div class="notification-form english">
 		<div class="heading-bar">
 			<label for="awp_notifications[order_completed]" class="notification-title"><?php esc_html_e( 'Order completed', 'awp' ); ?>
-                <span class="tooltip-text"><?php esc_html_e( 'Sent when an order is delivered.', 'awp' ); ?></span>
-            </label>
+				<span class="tooltip-text"><?php esc_html_e( 'Sent when an order is delivered.', 'awp' ); ?></span>
+			</label>
 			<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
 		</div>
 		<hr class="line">
 		<div class="notification">
 			<div class="form">
-			    <div class="dropdowns">
-			        <!-- Placeholder Dropdown Container -->
-                    <div class="placeholder-container"></div>
-                    <!-- Placeholder Dropdown Container (Message Templates) -->
-                    <div class="message-template-container"></div>
-                </div>
+				<div class="dropdowns">
+					<!-- Placeholder Dropdown Container -->
+					<div class="placeholder-container"></div>
+					<!-- Placeholder Dropdown Container (Message Templates) -->
+					<div class="message-template-container"></div>
+				</div>
 				<!-- Add textareas for  English messages -->
 				<textarea id="awp_notifications[order_completed]" name="awp_notifications[order_completed]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['order_completed'] ) ? esc_textarea( $this->notif['order_completed'] ) : ''; ?></textarea>
 				<div class="upload-field">
@@ -235,19 +235,19 @@ $upload_btn = __("Upload image", "awp");
 	<div class="notification-form english">
 		<div class="heading-bar">
 			<label for="awp_notifications[order_pending]" class="notification-title"><?php esc_html_e( 'Order pending payment', 'awp' ); ?>
-                <span class="tooltip-text"><?php esc_html_e( "Sent when a customer's pending payment can't be processed.", 'awp' ); ?></span>
-            </label>
+				<span class="tooltip-text"><?php esc_html_e( "Sent when a customer's pending payment can't be processed.", 'awp' ); ?></span>
+			</label>
 			<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
 		</div>
 		<hr class="line">
 		<div class="notification">
 			<div class="form">
-			    <div class="dropdowns">
-			        <!-- Placeholder Dropdown Container -->
-                    <div class="placeholder-container"></div>
-                    <!-- Placeholder Dropdown Container (Message Templates) -->
-                    <div class="message-template-container"></div>
-                </div>
+				<div class="dropdowns">
+					<!-- Placeholder Dropdown Container -->
+					<div class="placeholder-container"></div>
+					<!-- Placeholder Dropdown Container (Message Templates) -->
+					<div class="message-template-container"></div>
+				</div>
 				<!-- Add textareas for  English messages -->
 				<textarea id="awp_notifications[order_pending]" name="awp_notifications[order_pending]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['order_pending'] ) ? esc_textarea( $this->notif['order_pending'] ) : ''; ?></textarea>
 				<div class="upload-field">
@@ -261,19 +261,19 @@ $upload_btn = __("Upload image", "awp");
 	<div class="notification-form english">
 		<div class="heading-bar">
 			<label for="awp_notifications[order_failed]" class="notification-title"><?php esc_html_e( 'Order failed', 'awp' ); ?>
-                <span class="tooltip-text"><?php esc_html_e( "Sent when a customer's payment can't be processed during checkout.", 'awp' ); ?></span>
-            </label>
+				<span class="tooltip-text"><?php esc_html_e( "Sent when a customer's payment can't be processed during checkout.", 'awp' ); ?></span>
+			</label>
 			<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
 		</div>
 		<hr class="line">
 		<div class="notification">
 			<div class="form">
-			    <div class="dropdowns">
-			        <!-- Placeholder Dropdown Container -->
-                    <div class="placeholder-container"></div>
-                    <!-- Placeholder Dropdown Container (Message Templates) -->
-                    <div class="message-template-container"></div>
-                </div>
+				<div class="dropdowns">
+					<!-- Placeholder Dropdown Container -->
+					<div class="placeholder-container"></div>
+					<!-- Placeholder Dropdown Container (Message Templates) -->
+					<div class="message-template-container"></div>
+				</div>
 				<!-- Add textareas for  English messages -->
 				<textarea id="awp_notifications[order_failed]" name="awp_notifications[order_failed]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['order_failed'] ) ? esc_textarea( $this->notif['order_failed'] ) : ''; ?></textarea>
 				<div class="upload-field">
@@ -287,19 +287,19 @@ $upload_btn = __("Upload image", "awp");
 	<div class="notification-form english">
 		<div class="heading-bar">
 			<label for="awp_notifications[order_refunded]" class="notification-title"><?php esc_html_e( 'Order refunded', 'awp' ); ?>
-                <span class="tooltip-text"><?php esc_html_e( 'Sent when an order is refunded.', 'awp' ); ?></span>
-            </label>
+				<span class="tooltip-text"><?php esc_html_e( 'Sent when an order is refunded.', 'awp' ); ?></span>
+			</label>
 			<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
 		</div>
 		<hr class="line">
 		<div class="notification">
 			<div class="form">
-			    <div class="dropdowns">
-			        <!-- Placeholder Dropdown Container -->
-                    <div class="placeholder-container"></div>
-                    <!-- Placeholder Dropdown Container (Message Templates) -->
-                    <div class="message-template-container"></div>
-                </div>
+				<div class="dropdowns">
+					<!-- Placeholder Dropdown Container -->
+					<div class="placeholder-container"></div>
+					<!-- Placeholder Dropdown Container (Message Templates) -->
+					<div class="message-template-container"></div>
+				</div>
 				<!-- Add textareas for  English messages -->
 				<textarea id="awp_notifications[order_refunded]" name="awp_notifications[order_refunded]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['order_refunded'] ) ? esc_textarea( $this->notif['order_refunded'] ) : ''; ?></textarea>
 				<div class="upload-field">
@@ -313,19 +313,19 @@ $upload_btn = __("Upload image", "awp");
 	<div class="notification-form english">
 		<div class="heading-bar">
 			<label for="awp_notifications[order_cancelled]" class="notification-title"><?php esc_html_e( 'Order cancelled', 'awp' ); ?>
-                <span class="tooltip-text"><?php esc_html_e( 'Sent when a customer cancels their order.', 'awp' ); ?></span>
-            </label>
+				<span class="tooltip-text"><?php esc_html_e( 'Sent when a customer cancels their order.', 'awp' ); ?></span>
+			</label>
 			<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
 		</div>
 		<hr class="line">
 		<div class="notification">
 			<div class="form">
-			    <div class="dropdowns">
-			        <!-- Placeholder Dropdown Container -->
-                    <div class="placeholder-container"></div>
-                    <!-- Placeholder Dropdown Container (Message Templates) -->
-                    <div class="message-template-container"></div>
-                </div>
+				<div class="dropdowns">
+					<!-- Placeholder Dropdown Container -->
+					<div class="placeholder-container"></div>
+					<!-- Placeholder Dropdown Container (Message Templates) -->
+					<div class="message-template-container"></div>
+				</div>
 				<!-- Add textareas for  English messages -->
 				<textarea id="awp_notifications[order_cancelled]" name="awp_notifications[order_cancelled]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['order_cancelled'] ) ? esc_textarea( $this->notif['order_cancelled'] ) : ''; ?></textarea>
 				<div class="upload-field">
@@ -339,19 +339,19 @@ $upload_btn = __("Upload image", "awp");
 	<div class="notification-form english">
 		<div class="heading-bar">
 			<label for="awp_notifications[order_note]" class="notification-title"><?php esc_html_e( 'Order notes', 'awp' ); ?>
-                <span class="tooltip-text"><?php esc_html_e( 'Sent when you add an order note.', 'awp' ); ?></span>
-            </label>
+				<span class="tooltip-text"><?php esc_html_e( 'Sent when you add an order note.', 'awp' ); ?></span>
+			</label>
 			<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
 		</div>
 		<hr class="line">
 		<div class="notification">
 			<div class="form">
-			    <div class="dropdowns">
-			        <!-- Placeholder Dropdown Container -->
-                    <div class="placeholder-container"></div>
-                    <!-- Placeholder Dropdown Container (Message Templates) -->
-                    <div class="message-template-container"></div>
-                </div>
+				<div class="dropdowns">
+					<!-- Placeholder Dropdown Container -->
+					<div class="placeholder-container"></div>
+					<!-- Placeholder Dropdown Container (Message Templates) -->
+					<div class="message-template-container"></div>
+				</div>
 				<!-- Add textareas for  English messages -->
 				<textarea id="awp_notifications[order_note]" name="awp_notifications[order_note]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['order_note'] ) ? esc_textarea( $this->notif['order_note'] ) : ''; ?></textarea>
 				<div class="upload-field">
@@ -362,7 +362,7 @@ $upload_btn = __("Upload image", "awp");
 		</div>
 	</div>
 
-	<?php if ( ! empty( $status_list ) ) : ?>
+		<?php if ( ! empty( $status_list ) ) : ?>
 			<?php foreach ( $status_list as $status_name => $custom_status ) : ?>
 	<div class="notification-form english">
 	<div class="heading-bar">
@@ -386,12 +386,12 @@ $upload_btn = __("Upload image", "awp");
 </div>
 
 <div class="editor-content layout-ar" data-lang="arabic">
-    <?php
-        $blank_ar = "اتركها فارغة لتعطيلها.";
-        $txt_placeholder_ar = "اكتب رسالتك باللغة العربية هنا...";
-        $img_format_ar = "الصيغ المتاحة .png, .jpg, .jpeg";
-        $upload_btn_ar = "رفع الصورة";
-    ?>
+		<?php
+		$blank_ar           = 'اتركها فارغة لتعطيلها.';
+		$txt_placeholder_ar = 'اكتب رسالتك باللغة العربية هنا...';
+		$img_format_ar      = 'الصيغ المتاحة .png, .jpg, .jpeg';
+		$upload_btn_ar      = 'رفع الصورة';
+		?>
 
 	<div class="notification-form arabic hint">
 		<div class="hint-box">
@@ -404,19 +404,19 @@ $upload_btn = __("Upload image", "awp");
 	<div class="notification-form arabic">
 		<div class="heading-bar">
 			<label for="awp_notifications[order_onhold_arabic]" class="notification-title"><?php esc_html_e( 'قيد الانتظار', 'awp' ); ?>
-                <span class="tooltip-text"><?php esc_html_e( 'ترسل عندما يكون الطلب في انتظار تأكيد الدفع.', 'awp' ); ?></span>
-            </label>
+				<span class="tooltip-text"><?php esc_html_e( 'ترسل عندما يكون الطلب في انتظار تأكيد الدفع.', 'awp' ); ?></span>
+			</label>
 			<p class="deactive-hint"><em><?php esc_html_e( $blank_ar, 'awp' ); ?></em></p>
 		</div>
 		<hr class="line">
 		<div class="notification">
 			<div class="form">
-			    <div class="dropdowns">
-			        <!-- Placeholder Dropdown Container -->
-                    <div class="placeholder-container-ar"></div>
-                    <!-- Placeholder Dropdown Container (Message Templates) -->
-                     <div class="placeholder-messageTemplatesar"></div>
-                </div>
+				<div class="dropdowns">
+					<!-- Placeholder Dropdown Container -->
+					<div class="placeholder-container-ar"></div>
+					<!-- Placeholder Dropdown Container (Message Templates) -->
+					<div class="placeholder-messageTemplatesar"></div>
+				</div>
 				<!-- Add textareas for  English messages -->
 				<textarea id="awp_notifications[order_onhold_arabic]" name="awp_notifications[order_onhold_arabic]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder_ar, 'awp' ); ?>"><?php echo isset( $this->notif['order_onhold_arabic'] ) ? esc_textarea( $this->notif['order_onhold_arabic'] ) : ''; ?></textarea>
 				<div class="upload-field">
@@ -430,19 +430,19 @@ $upload_btn = __("Upload image", "awp");
 	<div class="notification-form arabic">
 		<div class="heading-bar">
 			<label for="awp_notifications[order_processing_arabic]" class="notification-title"><?php esc_html_e( 'قيد التنفيذ', 'awp' ); ?>
-                <span class="tooltip-text"><?php esc_html_e( 'ترسل عن تحديد الطلب على أنه قيد التجهيز.', 'awp' ); ?></span>
-            </label>
+				<span class="tooltip-text"><?php esc_html_e( 'ترسل عن تحديد الطلب على أنه قيد التجهيز.', 'awp' ); ?></span>
+			</label>
 			<p class="deactive-hint"><em><?php esc_html_e( $blank_ar, 'awp' ); ?></em></p>
 		</div>
 		<hr class="line">
 		<div class="notification">
 			<div class="form">
-			    <div class="dropdowns">
-			        <!-- Placeholder Dropdown Container -->
-                    <div class="placeholder-container-ar"></div>
-                    <!-- Placeholder Dropdown Container (Message Templates) -->
-                     <div class="placeholder-messageTemplatesar"></div>
-                </div>
+				<div class="dropdowns">
+					<!-- Placeholder Dropdown Container -->
+					<div class="placeholder-container-ar"></div>
+					<!-- Placeholder Dropdown Container (Message Templates) -->
+					<div class="placeholder-messageTemplatesar"></div>
+				</div>
 				<!-- Add textareas for  English messages -->
 				<textarea id="awp_notifications[order_processing_arabic]" name="awp_notifications[order_processing_arabic]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder_ar, 'awp' ); ?>"><?php echo isset( $this->notif['order_processing_arabic'] ) ? esc_textarea( $this->notif['order_processing_arabic'] ) : ''; ?></textarea>
 				<div class="upload-field">
@@ -456,19 +456,19 @@ $upload_btn = __("Upload image", "awp");
 	<div class="notification-form arabic">
 		<div class="heading-bar">
 			<label for="awp_notifications[order_completed_arabic]" class="notification-title"><?php esc_html_e( 'الطلب مكتمل', 'awp' ); ?>
-                <span class="tooltip-text"><?php esc_html_e( 'ترسل عند تسليم الطلب.', 'awp' ); ?></span>
-            </label>
+				<span class="tooltip-text"><?php esc_html_e( 'ترسل عند تسليم الطلب.', 'awp' ); ?></span>
+			</label>
 			<p class="deactive-hint"><em><?php esc_html_e( $blank_ar, 'awp' ); ?></em></p>
 		</div>
 		<hr class="line">
 		<div class="notification">
 			<div class="form">
-			    <div class="dropdowns">
-			        <!-- Placeholder Dropdown Container -->
-                    <div class="placeholder-container-ar"></div>
-                    <!-- Placeholder Dropdown Container (Message Templates) -->
-                     <div class="placeholder-messageTemplatesar"></div>
-                </div>
+				<div class="dropdowns">
+					<!-- Placeholder Dropdown Container -->
+					<div class="placeholder-container-ar"></div>
+					<!-- Placeholder Dropdown Container (Message Templates) -->
+					<div class="placeholder-messageTemplatesar"></div>
+				</div>
 				<!-- Add textareas for  English messages -->
 				<textarea id="awp_notifications[order_completed_arabic]" name="awp_notifications[order_completed_arabic]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder_ar, 'awp' ); ?>"><?php echo isset( $this->notif['order_completed_arabic'] ) ? esc_textarea( $this->notif['order_completed_arabic'] ) : ''; ?></textarea>
 				<div class="upload-field">
@@ -482,19 +482,19 @@ $upload_btn = __("Upload image", "awp");
 	<div class="notification-form arabic">
 		<div class="heading-bar">
 			<label for="awp_notifications[order_pending_arabic]" class="notification-title"><?php esc_html_e( 'بانتظار الدفع', 'awp' ); ?>
-                <span class="tooltip-text"><?php esc_html_e( 'ترسل عندما لا يمكن معالجة الدفعة المعلقة للعميل.', 'awp' ); ?></span>
-            </label>
+				<span class="tooltip-text"><?php esc_html_e( 'ترسل عندما لا يمكن معالجة الدفعة المعلقة للعميل.', 'awp' ); ?></span>
+			</label>
 			<p class="deactive-hint"><em><?php esc_html_e( $blank_ar, 'awp' ); ?></em></p>
 		</div>
 		<hr class="line">
 		<div class="notification">
 			<div class="form">
-			    <div class="dropdowns">
-			        <!-- Placeholder Dropdown Container -->
-                    <div class="placeholder-container-ar"></div>
-                    <!-- Placeholder Dropdown Container (Message Templates) -->
-                    <div class="placeholder-messageTemplatesar"></div>
-                </div>
+				<div class="dropdowns">
+					<!-- Placeholder Dropdown Container -->
+					<div class="placeholder-container-ar"></div>
+					<!-- Placeholder Dropdown Container (Message Templates) -->
+					<div class="placeholder-messageTemplatesar"></div>
+				</div>
 				<!-- Add textareas for  English messages -->
 				<textarea id="awp_notifications[order_pending_arabic]" name="awp_notifications[order_pending_arabic]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder_ar, 'awp' ); ?>"><?php echo isset( $this->notif['order_pending_arabic'] ) ? esc_textarea( $this->notif['order_pending_arabic'] ) : ''; ?></textarea>
 				<div class="upload-field">
@@ -508,19 +508,19 @@ $upload_btn = __("Upload image", "awp");
 	<div class="notification-form arabic">
 		<div class="heading-bar">
 			<label for="awp_notifications[order_failed_arabic]" class="notification-title"><?php esc_html_e( 'فشل الطلب', 'awp' ); ?>
-                <span class="tooltip-text"><?php esc_html_e( 'ترسل عند فشل الدفع اثناء الطلب.', 'awp' ); ?></span>
-            </label>
+				<span class="tooltip-text"><?php esc_html_e( 'ترسل عند فشل الدفع اثناء الطلب.', 'awp' ); ?></span>
+			</label>
 			<p class="deactive-hint"><em><?php esc_html_e( $blank_ar, 'awp' ); ?></em></p>
 		</div>
 		<hr class="line">
 		<div class="notification">
 			<div class="form">
-			    <div class="dropdowns">
-			        <!-- Placeholder Dropdown Container -->
-                    <div class="placeholder-container-ar"></div>
-                    <!-- Placeholder Dropdown Container (Message Templates) -->
-                     <div class="placeholder-messageTemplatesar"></div>
-                </div>
+				<div class="dropdowns">
+					<!-- Placeholder Dropdown Container -->
+					<div class="placeholder-container-ar"></div>
+					<!-- Placeholder Dropdown Container (Message Templates) -->
+					<div class="placeholder-messageTemplatesar"></div>
+				</div>
 				<!-- Add textareas for  English messages -->
 				<textarea id="awp_notifications[order_failed_arabic]" name="awp_notifications[order_failed_arabic]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder_ar, 'awp' ); ?>"><?php echo isset( $this->notif['order_failed_arabic'] ) ? esc_textarea( $this->notif['order_failed_arabic'] ) : ''; ?></textarea>
 				<div class="upload-field">
@@ -534,19 +534,19 @@ $upload_btn = __("Upload image", "awp");
 	<div class="notification-form arabic">
 		<div class="heading-bar">
 			<label for="awp_notifications[order_refunded_arabic]" class="notification-title"><?php esc_html_e( 'ارجاع الطلب', 'awp' ); ?>
-                <span class="tooltip-text"><?php esc_html_e( 'ترسل عند استرداد الطلب.', 'awp' ); ?></span>
-            </label>
+				<span class="tooltip-text"><?php esc_html_e( 'ترسل عند استرداد الطلب.', 'awp' ); ?></span>
+			</label>
 			<p class="deactive-hint"><em><?php esc_html_e( $blank_ar, 'awp' ); ?></em></p>
 		</div>
 		<hr class="line">
 		<div class="notification">
 			<div class="form">
-			    <div class="dropdowns">
-			        <!-- Placeholder Dropdown Container -->
-                    <div class="placeholder-container-ar"></div>
-                    <!-- Placeholder Dropdown Container (Message Templates) -->
-                    <div class="placeholder-messageTemplatesar"></div>
-                </div>
+				<div class="dropdowns">
+					<!-- Placeholder Dropdown Container -->
+					<div class="placeholder-container-ar"></div>
+					<!-- Placeholder Dropdown Container (Message Templates) -->
+					<div class="placeholder-messageTemplatesar"></div>
+				</div>
 				<!-- Add textareas for  English messages -->
 				<textarea id="awp_notifications[order_refunded_arabic]" name="awp_notifications[order_refunded_arabic]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder_ar, 'awp' ); ?>"><?php echo isset( $this->notif['order_refunded_arabic'] ) ? esc_textarea( $this->notif['order_refunded_arabic'] ) : ''; ?></textarea>
 				<div class="upload-field">
@@ -560,19 +560,19 @@ $upload_btn = __("Upload image", "awp");
 	<div class="notification-form arabic">
 		<div class="heading-bar">
 			<label for="awp_notifications[order_cancelled_arabic]" class="notification-title"><?php esc_html_e( 'الغاء الطلب', 'awp' ); ?>
-                <span class="tooltip-text"><?php esc_html_e( 'ترسل عندما يقوم العميل بإلغاء طلبه.', 'awp' ); ?></span>
-            </label>
+				<span class="tooltip-text"><?php esc_html_e( 'ترسل عندما يقوم العميل بإلغاء طلبه.', 'awp' ); ?></span>
+			</label>
 			<p class="deactive-hint"><em><?php esc_html_e( $blank_ar, 'awp' ); ?></em></p>
 		</div>
 		<hr class="line">
 		<div class="notification">
 			<div class="form">
-			    <div class="dropdowns">
-			        <!-- Placeholder Dropdown Container -->
-                    <div class="placeholder-container-ar"></div>
-                    <!-- Placeholder Dropdown Container (Message Templates) -->
-                    <div class="placeholder-messageTemplatesar"></div>
-                </div>
+				<div class="dropdowns">
+					<!-- Placeholder Dropdown Container -->
+					<div class="placeholder-container-ar"></div>
+					<!-- Placeholder Dropdown Container (Message Templates) -->
+					<div class="placeholder-messageTemplatesar"></div>
+				</div>
 				<!-- Add textareas for  English messages -->
 				<textarea id="awp_notifications[order_cancelled_arabic]" name="awp_notifications[order_cancelled_arabic]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder_ar, 'awp' ); ?>"><?php echo isset( $this->notif['order_cancelled_arabic'] ) ? esc_textarea( $this->notif['order_cancelled_arabic'] ) : ''; ?></textarea>
 				<div class="upload-field">
@@ -586,19 +586,19 @@ $upload_btn = __("Upload image", "awp");
 	<div class="notification-form arabic">
 		<div class="heading-bar">
 			<label for="awp_notifications[order_note_arabic]" class="notification-title"><?php esc_html_e( 'ملاحظات الطلب ', 'awp' ); ?>
-                <span class="tooltip-text"><?php esc_html_e( 'ترسل عند إضافتك ملاحظة للطلب.', 'awp' ); ?></span>
-            </label>
+				<span class="tooltip-text"><?php esc_html_e( 'ترسل عند إضافتك ملاحظة للطلب.', 'awp' ); ?></span>
+			</label>
 			<p class="deactive-hint"><em><?php esc_html_e( $blank_ar, 'awp' ); ?></em></p>
 		</div>
 		<hr class="line">
 		<div class="notification">
 			<div class="form">
-			    <div class="dropdowns">
-			        <!-- Placeholder Dropdown Container -->
-                    <div class="placeholder-container-ar"></div>
-                    <!-- Placeholder Dropdown Container (Message Templates) -->
-                     <div class="placeholder-messageTemplatesar"></div>
-                </div>
+				<div class="dropdowns">
+					<!-- Placeholder Dropdown Container -->
+					<div class="placeholder-container-ar"></div>
+					<!-- Placeholder Dropdown Container (Message Templates) -->
+					<div class="placeholder-messageTemplatesar"></div>
+				</div>
 				<!-- Add textareas for  English messages -->
 				<textarea id="awp_notifications[order_note_arabic]" name="awp_notifications[order_note_arabic]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder_ar, 'awp' ); ?>"><?php echo isset( $this->notif['order_note_arabic'] ) ? esc_textarea( $this->notif['order_note_arabic'] ) : ''; ?></textarea>
 				<div class="upload-field">
@@ -610,32 +610,32 @@ $upload_btn = __("Upload image", "awp");
 	</div>
 
 
-	<?php if ( ! empty( $status_list ) ) : ?>
-		<?php foreach ( $status_list as $status_name => $custom_status ) : ?>
-    	<div class="notification-form arabic">
-    		<div class="heading-bar">
-			    <label for="awp_notifications[order_<?php echo esc_attr( $custom_status ); ?>_arabic]" class="notification-title"><?php printf( __( 'Order - %s (العربية):', 'awp' ), esc_html( $status_name ) ); ?>
-                </label>
-    			<p class="deactive-hint"><em><?php esc_html_e( $blank_ar, 'awp' ); ?></em></p>
-    		</div>
-    		<hr class="line">
-    		<div class="notification">
-    			<div class="form">
-    			    <div class="dropdowns">
-    			        <!-- Placeholder Dropdown Container -->
-                        <div class="placeholder-container-ar"></div>
-                        <!-- Placeholder Dropdown Container (Message Templates) -->
-                         <div class="placeholder-messageTemplatesar"></div>
-                    </div>
-    				<!-- Add textareas for  English messages -->
-    				<textarea id="awp_notifications[order_<?php echo esc_html( $custom_status ); ?>_arabic]" name="awp_notifications[order_<?php echo esc_html( $custom_status ); ?>_arabic]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder_ar, 'awp' ); ?>"><?php echo isset( $this->notif['order_' . esc_html( $custom_status ) . '_arabic'] ) ? esc_textarea( $this->notif['order_' . esc_html( $custom_status ) . '_arabic'] ) : ''; ?></textarea>
-    				<div class="upload-field">
-    					<input type="text" name="awp_notifications[order_<?php echo esc_attr( $custom_status ); ?>_img_arabic]" placeholder="<?php esc_html_e( $img_format_ar, 'awp' ); ?>" class="image_url regular-text order_<?php echo esc_attr( $custom_status ); ?>_img_arabic upload-text" value="<?php echo esc_attr( isset( $this->notif['order_' . $custom_status . '_img_arabic'] ) ? $this->notif['order_' . $custom_status . '_img_arabic'] : '' ); ?>">
-    					<input type="button" name="upload-btn" value="<?php esc_html_e( $upload_btn_ar, 'awp' ); ?>" class="upload-btn" data-id="order_<?php echo $custom_status; ?>_img_arabic">
-    				</div>
-    			</div>
-    		</div>
-    	</div>
+		<?php if ( ! empty( $status_list ) ) : ?>
+			<?php foreach ( $status_list as $status_name => $custom_status ) : ?>
+		<div class="notification-form arabic">
+			<div class="heading-bar">
+				<label for="awp_notifications[order_<?php echo esc_attr( $custom_status ); ?>_arabic]" class="notification-title"><?php printf( __( 'Order - %s (العربية):', 'awp' ), esc_html( $status_name ) ); ?>
+				</label>
+				<p class="deactive-hint"><em><?php esc_html_e( $blank_ar, 'awp' ); ?></em></p>
+			</div>
+			<hr class="line">
+			<div class="notification">
+				<div class="form">
+					<div class="dropdowns">
+						<!-- Placeholder Dropdown Container -->
+						<div class="placeholder-container-ar"></div>
+						<!-- Placeholder Dropdown Container (Message Templates) -->
+						<div class="placeholder-messageTemplatesar"></div>
+					</div>
+					<!-- Add textareas for  English messages -->
+					<textarea id="awp_notifications[order_<?php echo esc_html( $custom_status ); ?>_arabic]" name="awp_notifications[order_<?php echo esc_html( $custom_status ); ?>_arabic]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder_ar, 'awp' ); ?>"><?php echo isset( $this->notif[ 'order_' . esc_html( $custom_status ) . '_arabic' ] ) ? esc_textarea( $this->notif[ 'order_' . esc_html( $custom_status ) . '_arabic' ] ) : ''; ?></textarea>
+					<div class="upload-field">
+						<input type="text" name="awp_notifications[order_<?php echo esc_attr( $custom_status ); ?>_img_arabic]" placeholder="<?php esc_html_e( $img_format_ar, 'awp' ); ?>" class="image_url regular-text order_<?php echo esc_attr( $custom_status ); ?>_img_arabic upload-text" value="<?php echo esc_attr( isset( $this->notif[ 'order_' . $custom_status . '_img_arabic' ] ) ? $this->notif[ 'order_' . $custom_status . '_img_arabic' ] : '' ); ?>">
+						<input type="button" name="upload-btn" value="<?php esc_html_e( $upload_btn_ar, 'awp' ); ?>" class="upload-btn" data-id="order_<?php echo $custom_status; ?>_img_arabic">
+					</div>
+				</div>
+			</div>
+		</div>
 		<?php endforeach; ?>
 	<?php endif; ?>
 
@@ -677,52 +677,52 @@ $upload_btn = __("Upload image", "awp");
 			
 			
 	<div class="info-banner">
-    	<p class="banner-text"><?php esc_html_e( 'Receive WhatsApp messages about new orders or order status updates to stay informed in real-time.', 'awp' ); ?></p>
-    	<input type="submit" class="button-primarywa saveit top" value="<?php esc_html_e( 'Save Changes', 'awp' ); ?>">
+		<p class="banner-text"><?php esc_html_e( 'Receive WhatsApp messages about new orders or order status updates to stay informed in real-time.', 'awp' ); ?></p>
+		<input type="submit" class="button-primarywa saveit top" value="<?php esc_html_e( 'Save Changes', 'awp' ); ?>">
 	</div>
 	<hr class="line">
-    <div class="notif-layout">
+	<div class="notif-layout">
 	<div class="notification-form english hint">
-    <div class="hint-box">
-        <label for="awp_notifications" class="hint-title"><?php esc_html_e('Admin order notifications', 'awp'); ?></label>
-        <p class="hint-desc"><?php esc_html_e('Stay updated by receiving customer orders directly on your WhatsApp.', 'awp'); ?></p>
-    </div>
-    <div class="notification-form phone">
-        <div class="heading-bar">
-            <label for="awp_notifications[admin_number]" class="notification-title"><?php esc_html_e('Your Whatsapp number:', 'awp'); ?></label>
-        </div>
-        <div class="notification">
-            <div class="phone-field">
-                <input id="admin_number" type="text" name="awp_notifications[admin_number]" placeholder="<?php echo esc_attr__('010 01234567', 'awp'); ?>" class="admin_number regular-text admin_number upload-text" value="<?php echo esc_attr(isset($this->notif['admin_number']) ? $this->notif['admin_number'] : ''); ?>">
-            </div>
-        </div>
-    </div>
+	<div class="hint-box">
+		<label for="awp_notifications" class="hint-title"><?php esc_html_e( 'Admin order notifications', 'awp' ); ?></label>
+		<p class="hint-desc"><?php esc_html_e( 'Stay updated by receiving customer orders directly on your WhatsApp.', 'awp' ); ?></p>
+	</div>
+	<div class="notification-form phone">
+		<div class="heading-bar">
+			<label for="awp_notifications[admin_number]" class="notification-title"><?php esc_html_e( 'Your Whatsapp number:', 'awp' ); ?></label>
+		</div>
+		<div class="notification">
+			<div class="phone-field">
+				<input id="admin_number" type="text" name="awp_notifications[admin_number]" placeholder="<?php echo esc_attr__( '010 01234567', 'awp' ); ?>" class="admin_number regular-text admin_number upload-text" value="<?php echo esc_attr( isset( $this->notif['admin_number'] ) ? $this->notif['admin_number'] : '' ); ?>">
+			</div>
+		</div>
+	</div>
 </div>
 
 
 	
-<?php
-$blank = __("leave blank to deactivate", "awp");
-$txt_placeholder = __("Write your message...", "awp");
-$img_format = __("Accepts .png, .jpg, .jpeg", "awp");
-$upload_btn = __("Upload image", "awp");
-?>
+		<?php
+		$blank           = __( 'leave blank to deactivate', 'awp' );
+		$txt_placeholder = __( 'Write your message...', 'awp' );
+		$img_format      = __( 'Accepts .png, .jpg, .jpeg', 'awp' );
+		$upload_btn      = __( 'Upload image', 'awp' );
+		?>
 
-    
+	
 	<div class="notification-form">
 		<div class="heading-bar">
 			<label for="awp_notifications[admin_pending]" class="notification-title"><?php esc_html_e( 'Admin Notification (Pending Payment)', 'awp' ); ?>
-                <span class="tooltip-text"><?php esc_html_e( "Receive when a customer's pending payment can't be processed.", 'awp' ); ?></span>
-            </label>
+				<span class="tooltip-text"><?php esc_html_e( "Receive when a customer's pending payment can't be processed.", 'awp' ); ?></span>
+			</label>
 			<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
 		</div>
 		<hr class="line">
 		<div class="notification">
 			<div class="form">
-			    <div class="dropdowns">
-			        <!-- Placeholder Dropdown Container -->
-                    <div class="placeholder-container"></div>
-                </div>
+				<div class="dropdowns">
+					<!-- Placeholder Dropdown Container -->
+					<div class="placeholder-container"></div>
+				</div>
 				<!-- Add textareas for  English messages -->
 				<textarea id="awp_notifications[admin_pending]" name="awp_notifications[admin_pending]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['admin_pending'] ) ? esc_textarea( $this->notif['admin_pending'] ) : ''; ?></textarea>
 				<div class="upload-field">
@@ -736,17 +736,17 @@ $upload_btn = __("Upload image", "awp");
 	<div class="notification-form">
 		<div class="heading-bar">
 			<label for="awp_notifications[admin_failed]" class="notification-title"><?php esc_html_e( 'Admin Notification (failed)', 'awp' ); ?>
-                <span class="tooltip-text"><?php esc_html_e( "Receive when a customer's payment can't be processed during checkout.", 'awp' ); ?></span>
-            </label>
+				<span class="tooltip-text"><?php esc_html_e( "Receive when a customer's payment can't be processed during checkout.", 'awp' ); ?></span>
+			</label>
 			<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
 		</div>
 		<hr class="line">
 		<div class="notification">
 			<div class="form">
-			    <div class="dropdowns">
-			        <!-- Placeholder Dropdown Container -->
-                    <div class="placeholder-container"></div>
-                </div>
+				<div class="dropdowns">
+					<!-- Placeholder Dropdown Container -->
+					<div class="placeholder-container"></div>
+				</div>
 				<!-- Add textareas for  English messages -->
 				<textarea id="awp_notifications[admin_failed]" name="awp_notifications[admin_failed]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['admin_failed'] ) ? esc_textarea( $this->notif['admin_failed'] ) : ''; ?></textarea>
 				<div class="upload-field">
@@ -760,17 +760,17 @@ $upload_btn = __("Upload image", "awp");
 	<div class="notification-form">
 		<div class="heading-bar">
 			<label for="awp_notifications[admin_onhold]" class="notification-title"><?php esc_html_e( 'Admin Notification (On-Hold)', 'awp' ); ?>
-                <span class="tooltip-text"><?php esc_html_e( 'Receive when an order is awaiting payment confirmation.', 'awp' ); ?></span>
-            </label>
+				<span class="tooltip-text"><?php esc_html_e( 'Receive when an order is awaiting payment confirmation.', 'awp' ); ?></span>
+			</label>
 			<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
 		</div>
 		<hr class="line">
 		<div class="notification">
 			<div class="form">
-			    <div class="dropdowns">
-			        <!-- Placeholder Dropdown Container -->
-                    <div class="placeholder-container"></div>
-                </div>
+				<div class="dropdowns">
+					<!-- Placeholder Dropdown Container -->
+					<div class="placeholder-container"></div>
+				</div>
 				<!-- Add textareas for  English messages -->
 				<textarea id="awp_notifications[admin_onhold]" name="awp_notifications[admin_onhold]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['admin_onhold'] ) ? esc_textarea( $this->notif['admin_onhold'] ) : ''; ?></textarea>
 				<div class="upload-field">
@@ -784,17 +784,17 @@ $upload_btn = __("Upload image", "awp");
 	<div class="notification-form">
 		<div class="heading-bar">
 			<label for="awp_notifications[admin_processing]" class="notification-title"><?php esc_html_e( 'Admin Notification (processing)', 'awp' ); ?>
-                <span class="tooltip-text"><?php esc_html_e( 'Receive when you mark an order as awaiting fulfillment.', 'awp' ); ?></span>
-            </label>
+				<span class="tooltip-text"><?php esc_html_e( 'Receive when you mark an order as awaiting fulfillment.', 'awp' ); ?></span>
+			</label>
 			<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
 		</div>
 		<hr class="line">
 		<div class="notification">
 			<div class="form">
-			    <div class="dropdowns">
-			        <!-- Placeholder Dropdown Container -->
-                    <div class="placeholder-container"></div>
-                </div>
+				<div class="dropdowns">
+					<!-- Placeholder Dropdown Container -->
+					<div class="placeholder-container"></div>
+				</div>
 				<!-- Add textareas for  English messages -->
 				<textarea id="awp_notifications[admin_processing]" name="awp_notifications[admin_processing]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['admin_processing'] ) ? esc_textarea( $this->notif['admin_processing'] ) : ''; ?></textarea>
 				<div class="upload-field">
@@ -808,17 +808,17 @@ $upload_btn = __("Upload image", "awp");
 	<div class="notification-form">
 		<div class="heading-bar">
 			<label for="awp_notifications[admin_completed]" class="notification-title"><?php esc_html_e( 'Admin Notification (completed)', 'awp' ); ?>
-                <span class="tooltip-text"><?php esc_html_e( 'Receive when an order is delivered.', 'awp' ); ?></span>
-            </label>
+				<span class="tooltip-text"><?php esc_html_e( 'Receive when an order is delivered.', 'awp' ); ?></span>
+			</label>
 			<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
 		</div>
 		<hr class="line">
 		<div class="notification">
 			<div class="form">
-			    <div class="dropdowns">
-			        <!-- Placeholder Dropdown Container -->
-                    <div class="placeholder-container"></div>
-                </div>
+				<div class="dropdowns">
+					<!-- Placeholder Dropdown Container -->
+					<div class="placeholder-container"></div>
+				</div>
 				<!-- Add textareas for  English messages -->
 				<textarea id="awp_notifications[admin_completed]" name="awp_notifications[admin_completed]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['admin_completed'] ) ? esc_textarea( $this->notif['admin_completed'] ) : ''; ?></textarea>
 				<div class="upload-field">
@@ -832,17 +832,17 @@ $upload_btn = __("Upload image", "awp");
 	<div class="notification-form">
 		<div class="heading-bar">
 			<label for="awp_notifications[admin_refunded]" class="notification-title"><?php esc_html_e( 'Admin Notification (refunded)', 'awp' ); ?>
-                <span class="tooltip-text"><?php esc_html_e( 'Receive when an order is refunded.', 'awp' ); ?></span>
-            </label>
+				<span class="tooltip-text"><?php esc_html_e( 'Receive when an order is refunded.', 'awp' ); ?></span>
+			</label>
 			<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
 		</div>
 		<hr class="line">
 		<div class="notification">
 			<div class="form">
-			    <div class="dropdowns">
-			        <!-- Placeholder Dropdown Container -->
-                    <div class="placeholder-container"></div>
-                </div>
+				<div class="dropdowns">
+					<!-- Placeholder Dropdown Container -->
+					<div class="placeholder-container"></div>
+				</div>
 				<!-- Add textareas for  English messages -->
 				<textarea id="awp_notifications[admin_refunded]" name="awp_notifications[admin_refunded]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['admin_refunded'] ) ? esc_textarea( $this->notif['admin_refunded'] ) : ''; ?></textarea>
 				<div class="upload-field">
@@ -856,17 +856,17 @@ $upload_btn = __("Upload image", "awp");
 	<div class="notification-form">
 		<div class="heading-bar">
 			<label for="awp_notifications[admin_cancelled]" class="notification-title"><?php esc_html_e( 'Admin Notification (cancelled)', 'awp' ); ?>
-                <span class="tooltip-text"><?php esc_html_e( 'Receive when a customer cancels their order.', 'awp' ); ?></span>
-            </label>
+				<span class="tooltip-text"><?php esc_html_e( 'Receive when a customer cancels their order.', 'awp' ); ?></span>
+			</label>
 			<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
 		</div>
 		<hr class="line">
 		<div class="notification">
 			<div class="form">
-			    <div class="dropdowns">
-			        <!-- Placeholder Dropdown Container -->
-                    <div class="placeholder-container"></div>
-                </div>
+				<div class="dropdowns">
+					<!-- Placeholder Dropdown Container -->
+					<div class="placeholder-container"></div>
+				</div>
 				<!-- Add textareas for  English messages -->
 				<textarea id="awp_notifications[admin_cancelled]" name="awp_notifications[admin_cancelled]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['admin_cancelled'] ) ? esc_textarea( $this->notif['admin_cancelled'] ) : ''; ?></textarea>
 				<div class="upload-field">
@@ -883,7 +883,7 @@ $upload_btn = __("Upload image", "awp");
 	<input type="submit" class="button-primarywa"
 			value="<?php esc_html_e( 'Save Changes', 'awp' ); ?>">
 </footer>
-<?php
+		<?php
 	}
 
 	public function followup_settings() {
@@ -892,17 +892,17 @@ $upload_btn = __("Upload image", "awp");
 
 	<div class="info-banner">
 		<p class="banner-text"><?php esc_html_e( 'Retarget customers with WhatsApp messages based on their order status and a timeframe you set.', 'awp' ); ?></p>
-    	<input type="submit" class="button-primarywa saveit top" value="<?php esc_html_e( 'Save Changes', 'awp' ); ?>">
+		<input type="submit" class="button-primarywa saveit top" value="<?php esc_html_e( 'Save Changes', 'awp' ); ?>">
 	</div>
 	<hr class="line">
-	<?php
-$blank = __("leave blank to deactivate", "awp");
-$txt_placeholder = __("Write your message...", "awp");
-$img_format = __("Accepts .png, .jpg, .jpeg", "awp");
-$upload_btn = __("Upload image", "awp");
-$timer_icon = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="timer-icon"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v5.414l3.293 3.293 1.414-1.414L13 11.586z"></path></svg>';
+		<?php
+		$blank           = __( 'leave blank to deactivate', 'awp' );
+		$txt_placeholder = __( 'Write your message...', 'awp' );
+		$img_format      = __( 'Accepts .png, .jpg, .jpeg', 'awp' );
+		$upload_btn      = __( 'Upload image', 'awp' );
+		$timer_icon      = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="timer-icon"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v5.414l3.293 3.293 1.414-1.414L13 11.586z"></path></svg>';
 
-?>
+		?>
 
 	<div class="notification-form english hint">
 		<div class="hint-box">
@@ -916,274 +916,274 @@ $timer_icon = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" vi
 		
 	<input type="radio" name="tabs" id="tabone" checked="checked">
 	<label for="tabone"><?php esc_html_e( 'On-Hold', 'awp' ); ?> </label>
-    <div class="tab one">
-        <div class="layout">
-        	<div class="notification-form">
-        		<div class="heading-bar">
-        			<label for="awp_notifications[followup_onhold]" class="notification-title"><?php esc_html_e( '#1 - On-hold follow-up', 'awp' ); ?>
-                        <span class="tooltip-text"><?php esc_html_e( 'Remind customers their order is awaiting fulfillment and reassure them.', 'awp' ); ?></span>
-                    </label>
-        			<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
-        		</div>
-        		<hr class="line">
-        		<div class="notification">
-        			<div class="form">
-        			    <div class="dropdowns">
-        			        <!-- Placeholder Dropdown Container -->
-                            <div class="placeholder-container"></div>
-                        </div>
-        				<!-- Add textareas for  English messages -->
-        				<textarea id="awp_notifications[followup_onhold]" name="awp_notifications[followup_onhold]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['followup_onhold'] ) ? esc_textarea( $this->notif['followup_onhold'] ) : ''; ?></textarea>
-        				<div class="upload-field">
-        					<input type="text" name="awp_notifications[followup_onhold_img]" placeholder="<?php esc_html_e( $img_format, 'awp' ); ?>" class="image_url regular-text followup_onhold_img upload-text" value="<?php echo esc_attr( isset( $this->notif['followup_onhold_img'] ) ? $this->notif['followup_onhold_img'] : '' ); ?>">
-        					<input type="button" name="upload-btn" value="<?php esc_html_e( $upload_btn, 'awp' ); ?>" class="upload-btn" data-id="followup_onhold_img">
-        				</div>
-        			</div>
-        		</div>
-        		<hr class="sep">
-        		<div class="timer">
-        			<label for="awp_notifications[followup_onhold_day]"><?php esc_html_e( 'Send message after:', 'awp' ); ?></label>
-        			<div class="input-with-hours">
-            		    <?php echo $timer_icon; ?>
-    				    <input id="awp_notifications[followup_onhold_day]" class="admin_number regular-text admin_number upload-text" name="awp_notifications[followup_onhold_day]" type="number" placeholder="<?php esc_html_e( '24', 'awp' ); ?>" value="<?php echo esc_attr( isset( $this->notif['followup_onhold_day'] ) ? $this->notif['followup_onhold_day'] : '' ); ?>">
-                        <span class="hours-label">hours</span>
-        			</div>
-        		</div>
-        	</div>
-        	<div class="notification-form">
-        		<div class="heading-bar">
-        			<label for="awp_notifications[followup_onhold_2]" class="notification-title"><?php esc_html_e( '#2 - On-hold follow-up', 'awp' ); ?>
-                        <span class="tooltip-text"><?php esc_html_e( 'Update customers on their on-hold order status and provide any additional information.', 'awp' ); ?></span>
-                    </label>
-        			<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
-        		</div>
-        		<hr class="line">
-        		<div class="notification">
-        			<div class="form">
-        			    <div class="dropdowns">
-        			        <!-- Placeholder Dropdown Container -->
-                            <div class="placeholder-container"></div>
-                        </div>
-        				<!-- Add textareas for  English messages -->
-        				<textarea id="awp_notifications[followup_onhold_2]" name="awp_notifications[followup_onhold_2]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['followup_onhold_2'] ) ? esc_textarea( $this->notif['followup_onhold_2'] ) : ''; ?></textarea>
-        				<div class="upload-field">
-        					<input type="text" name="awp_notifications[followup_onhold_img_2]" placeholder="<?php esc_html_e( $img_format, 'awp' ); ?>" class="image_url regular-text followup_onhold_img_2 upload-text" value="<?php echo esc_attr( isset( $this->notif['followup_onhold_img_2'] ) ? $this->notif['followup_onhold_img_2'] : '' ); ?>">
-        					<input type="button" name="upload-btn" value="<?php esc_html_e( $upload_btn, 'awp' ); ?>" class="upload-btn" data-id="followup_onhold_img_2">
-        				</div>
-        			</div>
-        		</div>
-        		<hr class="sep">
-        		<div class="timer">
-        			<label for="awp_notifications[followup_onhold_day_2]"><?php esc_html_e( 'Send message after:', 'awp' ); ?></label>
-        			<div class="input-with-hours">
-            		    <?php echo $timer_icon; ?>
-    				    <input id="awp_notifications[followup_onhold_day_2]" class="admin_number regular-text admin_number upload-text" name="awp_notifications[followup_onhold_day_2]" type="number" placeholder="<?php esc_html_e( '48', 'awp' ); ?>" value="<?php echo esc_attr( isset( $this->notif['followup_onhold_day_2'] ) ? $this->notif['followup_onhold_day_2'] : '' ); ?>">
-                        <span class="hours-label">hours</span>
-        			</div>
-        		</div>
-        	</div>
-        	
-        	<div class="notification-form">
-        		<div class="heading-bar">
-        			<label for="awp_notifications[followup_onhold_3]" class="notification-title"><?php esc_html_e( '#3 - On-hold follow-up', 'awp' ); ?>
-                        <span class="tooltip-text"><?php esc_html_e( 'Remind customers of the pending status and offer assistance if needed.', 'awp' ); ?></span>
-                    </label>
-        			<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
-        		</div>
-        		<hr class="line">
-        		<div class="notification">
-        			<div class="form">
-        			    <div class="dropdowns">
-        			        <!-- Placeholder Dropdown Container -->
-                            <div class="placeholder-container"></div>
-                        </div>
-        				<!-- Add textareas for  English messages -->
-        				<textarea id="awp_notifications[followup_onhold_3]" name="awp_notifications[followup_onhold_3]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['followup_onhold_3'] ) ? esc_textarea( $this->notif['followup_onhold_3'] ) : ''; ?></textarea>
-        				<div class="upload-field">
-        					<input type="text" name="awp_notifications[followup_onhold_img_3]" placeholder="<?php esc_html_e( $img_format, 'awp' ); ?>" class="image_url regular-text followup_onhold_img_3 upload-text" value="<?php echo esc_attr( isset( $this->notif['followup_onhold_img_3'] ) ? $this->notif['followup_onhold_img_3'] : '' ); ?>">
-        					<input type="button" name="upload-btn" value="<?php esc_html_e( $upload_btn, 'awp' ); ?>" class="upload-btn" data-id="followup_onhold_img_3">
-        				</div>
-        			</div>
-        		</div>
-        		<hr class="sep">
-        		<div class="timer">
-        			<label for="awp_notifications[followup_onhold_day_3]"><?php esc_html_e( 'Send message after:', 'awp' ); ?></label>
-        			<div class="input-with-hours">
-            		    <?php echo $timer_icon; ?>
-    				    <input id="awp_notifications[followup_onhold_day_3]" class="admin_number regular-text admin_number upload-text" name="awp_notifications[followup_onhold_day_3]" type="number" placeholder="<?php esc_html_e( '72', 'awp' ); ?>" value="<?php echo esc_attr( isset( $this->notif['followup_onhold_day_3'] ) ? $this->notif['followup_onhold_day_3'] : '' ); ?>">
-                        <span class="hours-label">hours</span>
-        			</div>
-        		</div>
-        	</div>
-        	
-        	        	<div class="notification-form">
-        		<div class="heading-bar">
-        			<label for="awp_notifications[followup_onhold_4]" class="notification-title"><?php esc_html_e( '#4 - On-hold follow-up', 'awp' ); ?>
-                        <span class="tooltip-text"><?php esc_html_e( 'Send a final reminder about the on-hold status, encouraging them to contact support if they have concerns.', 'awp' ); ?></span>
-                    </label>
-        			<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
-        		</div>
-        		<hr class="line">
-        		<div class="notification">
-        			<div class="form">
-        			    <div class="dropdowns">
-        			        <!-- Placeholder Dropdown Container -->
-                            <div class="placeholder-container"></div>
-                        </div>
-        				<textarea id="awp_notifications[followup_onhold_4]" name="awp_notifications[followup_onhold_4]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['followup_onhold_4'] ) ? esc_textarea( $this->notif['followup_onhold_4'] ) : ''; ?></textarea>
-        				<div class="upload-field">
-        					<input type="text" name="awp_notifications[followup_onhold_img_4]" placeholder="<?php esc_html_e( $img_format, 'awp' ); ?>" class="image_url regular-text followup_onhold_img_4 upload-text" value="<?php echo esc_attr( isset( $this->notif['followup_onhold_img_4'] ) ? $this->notif['followup_onhold_img_4'] : '' ); ?>">
-        					<input type="button" name="upload-btn" value="<?php esc_html_e( $upload_btn, 'awp' ); ?>" class="upload-btn" data-id="followup_onhold_img_4">
-        				</div>
-        			</div>
-        		</div>
-        		<hr class="sep">
-        		<div class="timer">
-        			<label for="awp_notifications[followup_onhold_day_4]"><?php esc_html_e( 'Send message after:', 'awp' ); ?></label>
-        			<div class="input-with-hours">
-            		    <?php echo $timer_icon; ?>
-    				    <input id="awp_notifications[followup_onhold_day_4]" class="admin_number regular-text admin_number upload-text" name="awp_notifications[followup_onhold_day_4]" type="number" placeholder="<?php esc_html_e( '96', 'awp' ); ?>" value="<?php echo esc_attr( isset( $this->notif['followup_onhold_day_4'] ) ? $this->notif['followup_onhold_day_4'] : '' ); ?>">
-                        <span class="hours-label">hours</span>
-        			</div>
-        		</div>
-        	</div>
+	<div class="tab one">
+		<div class="layout">
+			<div class="notification-form">
+				<div class="heading-bar">
+					<label for="awp_notifications[followup_onhold]" class="notification-title"><?php esc_html_e( '#1 - On-hold follow-up', 'awp' ); ?>
+						<span class="tooltip-text"><?php esc_html_e( 'Remind customers their order is awaiting fulfillment and reassure them.', 'awp' ); ?></span>
+					</label>
+					<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
+				</div>
+				<hr class="line">
+				<div class="notification">
+					<div class="form">
+						<div class="dropdowns">
+							<!-- Placeholder Dropdown Container -->
+							<div class="placeholder-container"></div>
+						</div>
+						<!-- Add textareas for  English messages -->
+						<textarea id="awp_notifications[followup_onhold]" name="awp_notifications[followup_onhold]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['followup_onhold'] ) ? esc_textarea( $this->notif['followup_onhold'] ) : ''; ?></textarea>
+						<div class="upload-field">
+							<input type="text" name="awp_notifications[followup_onhold_img]" placeholder="<?php esc_html_e( $img_format, 'awp' ); ?>" class="image_url regular-text followup_onhold_img upload-text" value="<?php echo esc_attr( isset( $this->notif['followup_onhold_img'] ) ? $this->notif['followup_onhold_img'] : '' ); ?>">
+							<input type="button" name="upload-btn" value="<?php esc_html_e( $upload_btn, 'awp' ); ?>" class="upload-btn" data-id="followup_onhold_img">
+						</div>
+					</div>
+				</div>
+				<hr class="sep">
+				<div class="timer">
+					<label for="awp_notifications[followup_onhold_day]"><?php esc_html_e( 'Send message after:', 'awp' ); ?></label>
+					<div class="input-with-hours">
+						<?php echo $timer_icon; ?>
+						<input id="awp_notifications[followup_onhold_day]" class="admin_number regular-text admin_number upload-text" name="awp_notifications[followup_onhold_day]" type="number" placeholder="<?php esc_html_e( '24', 'awp' ); ?>" value="<?php echo esc_attr( isset( $this->notif['followup_onhold_day'] ) ? $this->notif['followup_onhold_day'] : '' ); ?>">
+						<span class="hours-label">hours</span>
+					</div>
+				</div>
+			</div>
+			<div class="notification-form">
+				<div class="heading-bar">
+					<label for="awp_notifications[followup_onhold_2]" class="notification-title"><?php esc_html_e( '#2 - On-hold follow-up', 'awp' ); ?>
+						<span class="tooltip-text"><?php esc_html_e( 'Update customers on their on-hold order status and provide any additional information.', 'awp' ); ?></span>
+					</label>
+					<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
+				</div>
+				<hr class="line">
+				<div class="notification">
+					<div class="form">
+						<div class="dropdowns">
+							<!-- Placeholder Dropdown Container -->
+							<div class="placeholder-container"></div>
+						</div>
+						<!-- Add textareas for  English messages -->
+						<textarea id="awp_notifications[followup_onhold_2]" name="awp_notifications[followup_onhold_2]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['followup_onhold_2'] ) ? esc_textarea( $this->notif['followup_onhold_2'] ) : ''; ?></textarea>
+						<div class="upload-field">
+							<input type="text" name="awp_notifications[followup_onhold_img_2]" placeholder="<?php esc_html_e( $img_format, 'awp' ); ?>" class="image_url regular-text followup_onhold_img_2 upload-text" value="<?php echo esc_attr( isset( $this->notif['followup_onhold_img_2'] ) ? $this->notif['followup_onhold_img_2'] : '' ); ?>">
+							<input type="button" name="upload-btn" value="<?php esc_html_e( $upload_btn, 'awp' ); ?>" class="upload-btn" data-id="followup_onhold_img_2">
+						</div>
+					</div>
+				</div>
+				<hr class="sep">
+				<div class="timer">
+					<label for="awp_notifications[followup_onhold_day_2]"><?php esc_html_e( 'Send message after:', 'awp' ); ?></label>
+					<div class="input-with-hours">
+						<?php echo $timer_icon; ?>
+						<input id="awp_notifications[followup_onhold_day_2]" class="admin_number regular-text admin_number upload-text" name="awp_notifications[followup_onhold_day_2]" type="number" placeholder="<?php esc_html_e( '48', 'awp' ); ?>" value="<?php echo esc_attr( isset( $this->notif['followup_onhold_day_2'] ) ? $this->notif['followup_onhold_day_2'] : '' ); ?>">
+						<span class="hours-label">hours</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="notification-form">
+				<div class="heading-bar">
+					<label for="awp_notifications[followup_onhold_3]" class="notification-title"><?php esc_html_e( '#3 - On-hold follow-up', 'awp' ); ?>
+						<span class="tooltip-text"><?php esc_html_e( 'Remind customers of the pending status and offer assistance if needed.', 'awp' ); ?></span>
+					</label>
+					<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
+				</div>
+				<hr class="line">
+				<div class="notification">
+					<div class="form">
+						<div class="dropdowns">
+							<!-- Placeholder Dropdown Container -->
+							<div class="placeholder-container"></div>
+						</div>
+						<!-- Add textareas for  English messages -->
+						<textarea id="awp_notifications[followup_onhold_3]" name="awp_notifications[followup_onhold_3]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['followup_onhold_3'] ) ? esc_textarea( $this->notif['followup_onhold_3'] ) : ''; ?></textarea>
+						<div class="upload-field">
+							<input type="text" name="awp_notifications[followup_onhold_img_3]" placeholder="<?php esc_html_e( $img_format, 'awp' ); ?>" class="image_url regular-text followup_onhold_img_3 upload-text" value="<?php echo esc_attr( isset( $this->notif['followup_onhold_img_3'] ) ? $this->notif['followup_onhold_img_3'] : '' ); ?>">
+							<input type="button" name="upload-btn" value="<?php esc_html_e( $upload_btn, 'awp' ); ?>" class="upload-btn" data-id="followup_onhold_img_3">
+						</div>
+					</div>
+				</div>
+				<hr class="sep">
+				<div class="timer">
+					<label for="awp_notifications[followup_onhold_day_3]"><?php esc_html_e( 'Send message after:', 'awp' ); ?></label>
+					<div class="input-with-hours">
+						<?php echo $timer_icon; ?>
+						<input id="awp_notifications[followup_onhold_day_3]" class="admin_number regular-text admin_number upload-text" name="awp_notifications[followup_onhold_day_3]" type="number" placeholder="<?php esc_html_e( '72', 'awp' ); ?>" value="<?php echo esc_attr( isset( $this->notif['followup_onhold_day_3'] ) ? $this->notif['followup_onhold_day_3'] : '' ); ?>">
+						<span class="hours-label">hours</span>
+					</div>
+				</div>
+			</div>
+			
+						<div class="notification-form">
+				<div class="heading-bar">
+					<label for="awp_notifications[followup_onhold_4]" class="notification-title"><?php esc_html_e( '#4 - On-hold follow-up', 'awp' ); ?>
+						<span class="tooltip-text"><?php esc_html_e( 'Send a final reminder about the on-hold status, encouraging them to contact support if they have concerns.', 'awp' ); ?></span>
+					</label>
+					<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
+				</div>
+				<hr class="line">
+				<div class="notification">
+					<div class="form">
+						<div class="dropdowns">
+							<!-- Placeholder Dropdown Container -->
+							<div class="placeholder-container"></div>
+						</div>
+						<textarea id="awp_notifications[followup_onhold_4]" name="awp_notifications[followup_onhold_4]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['followup_onhold_4'] ) ? esc_textarea( $this->notif['followup_onhold_4'] ) : ''; ?></textarea>
+						<div class="upload-field">
+							<input type="text" name="awp_notifications[followup_onhold_img_4]" placeholder="<?php esc_html_e( $img_format, 'awp' ); ?>" class="image_url regular-text followup_onhold_img_4 upload-text" value="<?php echo esc_attr( isset( $this->notif['followup_onhold_img_4'] ) ? $this->notif['followup_onhold_img_4'] : '' ); ?>">
+							<input type="button" name="upload-btn" value="<?php esc_html_e( $upload_btn, 'awp' ); ?>" class="upload-btn" data-id="followup_onhold_img_4">
+						</div>
+					</div>
+				</div>
+				<hr class="sep">
+				<div class="timer">
+					<label for="awp_notifications[followup_onhold_day_4]"><?php esc_html_e( 'Send message after:', 'awp' ); ?></label>
+					<div class="input-with-hours">
+						<?php echo $timer_icon; ?>
+						<input id="awp_notifications[followup_onhold_day_4]" class="admin_number regular-text admin_number upload-text" name="awp_notifications[followup_onhold_day_4]" type="number" placeholder="<?php esc_html_e( '96', 'awp' ); ?>" value="<?php echo esc_attr( isset( $this->notif['followup_onhold_day_4'] ) ? $this->notif['followup_onhold_day_4'] : '' ); ?>">
+						<span class="hours-label">hours</span>
+					</div>
+				</div>
+			</div>
 
-        	
-        </div>
-    </div>              
+			
+		</div>
+	</div>              
 			  
 	<input type="radio" name="tabs" id="tabtwo">
 	<label for="tabtwo"><?php esc_html_e( 'Post Purchase', 'awp' ); ?></label>
 	<div class="tab two">
-        <div class="layout">
-        	<div class="notification-form">
-        		<div class="heading-bar">
-        			<label for="awp_notifications[followup_aftersales]" class="notification-title"><?php esc_html_e( '#1 - Completed follow-up', 'awp' ); ?>
-                        <span class="tooltip-text"><?php esc_html_e( 'Thank the customer for their purchase and confirm that the order has been completed.', 'awp' ); ?></span>
-                    </label>
-        			<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
-        		</div>
-        		<hr class="line">
-        		<div class="notification">
-        			<div class="form">
-        			    <div class="dropdowns">
-        			        <!-- Placeholder Dropdown Container -->
-                            <div class="placeholder-container"></div>
-                        </div>
-        				<!-- Add textareas for  English messages -->
-        				<textarea id="awp_notifications[followup_aftersales]" name="awp_notifications[followup_aftersales]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['followup_aftersales'] ) ? esc_textarea( $this->notif['followup_aftersales'] ) : ''; ?></textarea>
-        				<div class="upload-field">
-        					<input type="text" name="awp_notifications[followup_aftersales_img]" placeholder="<?php esc_html_e( $img_format, 'awp' ); ?>" class="image_url regular-text followup_aftersales_img upload-text" value="<?php echo esc_attr( isset( $this->notif['followup_aftersales_img'] ) ? $this->notif['followup_aftersales_img'] : '' ); ?>">
-        					<input type="button" name="upload-btn" value="<?php esc_html_e( $upload_btn, 'awp' ); ?>" class="upload-btn" data-id="followup_aftersales_img">
-        				</div>
-        			</div>
-        		</div>
-        		<hr class="sep">
-        		<div class="timer">
-        			<label for="awp_notifications[followup_aftersales_day]"><?php esc_html_e( 'Send message after:', 'awp' ); ?></label>
-        			<div class="input-with-hours">
-            		    <?php echo $timer_icon; ?>
-    				    <input id="awp_notifications[followup_aftersales_day]" class="admin_number regular-text admin_number upload-text" name="awp_notifications[followup_aftersales_day]" type="number" placeholder="<?php esc_html_e( '24', 'awp' ); ?>" value="<?php echo esc_attr( isset( $this->notif['followup_aftersales_day'] ) ? $this->notif['followup_aftersales_day'] : '' ); ?>">
-                        <span class="hours-label">hours</span>
-        			</div>
-        		</div>
-        	</div>
-        	<div class="notification-form">
-        		<div class="heading-bar">
-        			<label for="awp_notifications[followup_aftersales_2]" class="notification-title"><?php esc_html_e( '#2 - Completed follow-up', 'awp' ); ?>
-                        <span class="tooltip-text"><?php esc_html_e( 'Request feedback from the customer about their shopping experience.', 'awp' ); ?></span>
-                    </label>
-        			<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
-        		</div>
-        		<hr class="line">
-        		<div class="notification">
-        			<div class="form">
-        			    <div class="dropdowns">
-        			        <!-- Placeholder Dropdown Container -->
-                            <div class="placeholder-container"></div>
-                        </div>
-        				<!-- Add textareas for  English messages -->
-        				<textarea id="awp_notifications[followup_aftersales_2]" name="awp_notifications[followup_aftersales_2]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['followup_aftersales_2'] ) ? esc_textarea( $this->notif['followup_aftersales_2'] ) : ''; ?></textarea>
-        				<div class="upload-field">
-        					<input type="text" name="awp_notifications[followup_aftersales_img_2]" placeholder="<?php esc_html_e( $img_format, 'awp' ); ?>" class="image_url regular-text followup_aftersales_img_2 upload-text" value="<?php echo esc_attr( isset( $this->notif['followup_aftersales_img_2'] ) ? $this->notif['followup_aftersales_img_2'] : '' ); ?>">
-        					<input type="button" name="upload-btn" value="<?php esc_html_e( $upload_btn, 'awp' ); ?>" class="upload-btn" data-id="followup_aftersales_img_2">
-        				</div>
-        			</div>
-        		</div>
-        		<hr class="sep">
-        		<div class="timer">
-        			<label for="awp_notifications[followup_aftersales_day_2]"><?php esc_html_e( 'Send message after:', 'awp' ); ?></label>
-        			<div class="input-with-hours">
-            		    <?php echo $timer_icon; ?>
-    				    <input id="awp_notifications[followup_aftersales_day_2]" class="admin_number regular-text admin_number upload-text" name="awp_notifications[followup_aftersales_day_2]" type="number" placeholder="<?php esc_html_e( '48', 'awp' ); ?>" value="<?php echo esc_attr( isset( $this->notif['followup_aftersales_day_2'] ) ? $this->notif['followup_aftersales_day_2'] : '' ); ?>">
-                        <span class="hours-label">hours</span>
-        			</div>
-        		</div>
-        	</div>
-        	<div class="notification-form">
-        		<div class="heading-bar">
-        			<label for="awp_notifications[followup_aftersales_3]" class="notification-title"><?php esc_html_e( '#3 - Completed follow-up', 'awp' ); ?>
-                        <span class="tooltip-text"><?php esc_html_e( 'Encourage the customer to leave a review for the product they purchased.', 'awp' ); ?></span>
-                    </label>
-        			<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
-        		</div>
-        		<hr class="line">
-        		<div class="notification">
-        			<div class="form">
-        			    <div class="dropdowns">
-        			        <!-- Placeholder Dropdown Container -->
-                            <div class="placeholder-container"></div>
-                        </div>
-        				<!-- Add textareas for  English messages -->
-        				<textarea id="awp_notifications[followup_aftersales_3]" name="awp_notifications[followup_aftersales_3]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['followup_aftersales_3'] ) ? esc_textarea( $this->notif['followup_aftersales_3'] ) : ''; ?></textarea>
-        				<div class="upload-field">
-        					<input type="text" name="awp_notifications[followup_aftersales_img_3]" placeholder="<?php esc_html_e( $img_format, 'awp' ); ?>" class="image_url regular-text followup_aftersales_img_3 upload-text" value="<?php echo esc_attr( isset( $this->notif['followup_aftersales_img_3'] ) ? $this->notif['followup_aftersales_img_3'] : '' ); ?>">
-        					<input type="button" name="upload-btn" value="<?php esc_html_e( $upload_btn, 'awp' ); ?>" class="upload-btn" data-id="followup_aftersales_img_3">
-        				</div>
-        			</div>
-        		</div>
-        		<hr class="sep">
-        		<div class="timer">
-        			<label for="awp_notifications[followup_aftersales_day_3]"><?php esc_html_e( 'Send message after:', 'awp' ); ?></label>
-        			<div class="input-with-hours">
-            		    <?php echo $timer_icon; ?>
-    				    <input id="awp_notifications[followup_aftersales_day_3]" class="admin_number regular-text admin_number upload-text" name="awp_notifications[followup_aftersales_day_3]" type="number" placeholder="<?php esc_html_e( '72', 'awp' ); ?>" value="<?php echo esc_attr( isset( $this->notif['followup_aftersales_day_3'] ) ? $this->notif['followup_aftersales_day_3'] : '' ); ?>">
-                        <span class="hours-label">hours</span>
-        			</div>
-        		</div>
-        	</div>
-        	<div class="notification-form">
-        		<div class="heading-bar">
-        			<label for="awp_notifications[followup_aftersales_4]" class="notification-title"><?php esc_html_e( '#4 - Completed follow-up', 'awp' ); ?>
-                        <span class="tooltip-text"><?php esc_html_e( 'Invite the customer to join your loyalty program for exclusive benefits and discounts.', 'awp' ); ?></span>
-                    </label>
-        			<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
-        		</div>
-        		<hr class="line">
-        		<div class="notification">
-        			<div class="form">
-        			    <div class="dropdowns">
-        			        <!-- Placeholder Dropdown Container -->
-                            <div class="placeholder-container"></div>
-                        </div>
-        				<!-- Add textareas for  English messages -->
-        				<textarea id="awp_notifications[followup_aftersales_4]" name="awp_notifications[followup_aftersales_4]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['followup_aftersales_4'] ) ? esc_textarea( $this->notif['followup_aftersales_4'] ) : ''; ?></textarea>
-        				<div class="upload-field">
-        					<input type="text" name="awp_notifications[followup_aftersales_img_4]" placeholder="<?php esc_html_e( $img_format, 'awp' ); ?>" class="image_url regular-text followup_aftersales_img_4 upload-text" value="<?php echo esc_attr( isset( $this->notif['followup_aftersales_img_4'] ) ? $this->notif['followup_aftersales_img_4'] : '' ); ?>">
-        					<input type="button" name="upload-btn" value="<?php esc_html_e( $upload_btn, 'awp' ); ?>" class="upload-btn" data-id="followup_aftersales_img_4">
-        				</div>
-        			</div>
-        		</div>
-        		<hr class="sep">
-        		<div class="timer">
-        			<label for="awp_notifications[followup_aftersales_day_4]"><?php esc_html_e( 'Send message after:', 'awp' ); ?></label>
-        			<div class="input-with-hours">
-            		    <?php echo $timer_icon; ?>
-    				    <input id="awp_notifications[followup_aftersales_day_4]" class="admin_number regular-text admin_number upload-text" name="awp_notifications[followup_aftersales_day_4]" type="number" placeholder="<?php esc_html_e( '96', 'awp' ); ?>" value="<?php echo esc_attr( isset( $this->notif['followup_aftersales_day_4'] ) ? $this->notif['followup_aftersales_day_4'] : '' ); ?>">
-                        <span class="hours-label">hours</span>
-        			</div>
-        		</div>
-        	</div>
+		<div class="layout">
+			<div class="notification-form">
+				<div class="heading-bar">
+					<label for="awp_notifications[followup_aftersales]" class="notification-title"><?php esc_html_e( '#1 - Completed follow-up', 'awp' ); ?>
+						<span class="tooltip-text"><?php esc_html_e( 'Thank the customer for their purchase and confirm that the order has been completed.', 'awp' ); ?></span>
+					</label>
+					<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
+				</div>
+				<hr class="line">
+				<div class="notification">
+					<div class="form">
+						<div class="dropdowns">
+							<!-- Placeholder Dropdown Container -->
+							<div class="placeholder-container"></div>
+						</div>
+						<!-- Add textareas for  English messages -->
+						<textarea id="awp_notifications[followup_aftersales]" name="awp_notifications[followup_aftersales]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['followup_aftersales'] ) ? esc_textarea( $this->notif['followup_aftersales'] ) : ''; ?></textarea>
+						<div class="upload-field">
+							<input type="text" name="awp_notifications[followup_aftersales_img]" placeholder="<?php esc_html_e( $img_format, 'awp' ); ?>" class="image_url regular-text followup_aftersales_img upload-text" value="<?php echo esc_attr( isset( $this->notif['followup_aftersales_img'] ) ? $this->notif['followup_aftersales_img'] : '' ); ?>">
+							<input type="button" name="upload-btn" value="<?php esc_html_e( $upload_btn, 'awp' ); ?>" class="upload-btn" data-id="followup_aftersales_img">
+						</div>
+					</div>
+				</div>
+				<hr class="sep">
+				<div class="timer">
+					<label for="awp_notifications[followup_aftersales_day]"><?php esc_html_e( 'Send message after:', 'awp' ); ?></label>
+					<div class="input-with-hours">
+						<?php echo $timer_icon; ?>
+						<input id="awp_notifications[followup_aftersales_day]" class="admin_number regular-text admin_number upload-text" name="awp_notifications[followup_aftersales_day]" type="number" placeholder="<?php esc_html_e( '24', 'awp' ); ?>" value="<?php echo esc_attr( isset( $this->notif['followup_aftersales_day'] ) ? $this->notif['followup_aftersales_day'] : '' ); ?>">
+						<span class="hours-label">hours</span>
+					</div>
+				</div>
+			</div>
+			<div class="notification-form">
+				<div class="heading-bar">
+					<label for="awp_notifications[followup_aftersales_2]" class="notification-title"><?php esc_html_e( '#2 - Completed follow-up', 'awp' ); ?>
+						<span class="tooltip-text"><?php esc_html_e( 'Request feedback from the customer about their shopping experience.', 'awp' ); ?></span>
+					</label>
+					<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
+				</div>
+				<hr class="line">
+				<div class="notification">
+					<div class="form">
+						<div class="dropdowns">
+							<!-- Placeholder Dropdown Container -->
+							<div class="placeholder-container"></div>
+						</div>
+						<!-- Add textareas for  English messages -->
+						<textarea id="awp_notifications[followup_aftersales_2]" name="awp_notifications[followup_aftersales_2]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['followup_aftersales_2'] ) ? esc_textarea( $this->notif['followup_aftersales_2'] ) : ''; ?></textarea>
+						<div class="upload-field">
+							<input type="text" name="awp_notifications[followup_aftersales_img_2]" placeholder="<?php esc_html_e( $img_format, 'awp' ); ?>" class="image_url regular-text followup_aftersales_img_2 upload-text" value="<?php echo esc_attr( isset( $this->notif['followup_aftersales_img_2'] ) ? $this->notif['followup_aftersales_img_2'] : '' ); ?>">
+							<input type="button" name="upload-btn" value="<?php esc_html_e( $upload_btn, 'awp' ); ?>" class="upload-btn" data-id="followup_aftersales_img_2">
+						</div>
+					</div>
+				</div>
+				<hr class="sep">
+				<div class="timer">
+					<label for="awp_notifications[followup_aftersales_day_2]"><?php esc_html_e( 'Send message after:', 'awp' ); ?></label>
+					<div class="input-with-hours">
+						<?php echo $timer_icon; ?>
+						<input id="awp_notifications[followup_aftersales_day_2]" class="admin_number regular-text admin_number upload-text" name="awp_notifications[followup_aftersales_day_2]" type="number" placeholder="<?php esc_html_e( '48', 'awp' ); ?>" value="<?php echo esc_attr( isset( $this->notif['followup_aftersales_day_2'] ) ? $this->notif['followup_aftersales_day_2'] : '' ); ?>">
+						<span class="hours-label">hours</span>
+					</div>
+				</div>
+			</div>
+			<div class="notification-form">
+				<div class="heading-bar">
+					<label for="awp_notifications[followup_aftersales_3]" class="notification-title"><?php esc_html_e( '#3 - Completed follow-up', 'awp' ); ?>
+						<span class="tooltip-text"><?php esc_html_e( 'Encourage the customer to leave a review for the product they purchased.', 'awp' ); ?></span>
+					</label>
+					<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
+				</div>
+				<hr class="line">
+				<div class="notification">
+					<div class="form">
+						<div class="dropdowns">
+							<!-- Placeholder Dropdown Container -->
+							<div class="placeholder-container"></div>
+						</div>
+						<!-- Add textareas for  English messages -->
+						<textarea id="awp_notifications[followup_aftersales_3]" name="awp_notifications[followup_aftersales_3]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['followup_aftersales_3'] ) ? esc_textarea( $this->notif['followup_aftersales_3'] ) : ''; ?></textarea>
+						<div class="upload-field">
+							<input type="text" name="awp_notifications[followup_aftersales_img_3]" placeholder="<?php esc_html_e( $img_format, 'awp' ); ?>" class="image_url regular-text followup_aftersales_img_3 upload-text" value="<?php echo esc_attr( isset( $this->notif['followup_aftersales_img_3'] ) ? $this->notif['followup_aftersales_img_3'] : '' ); ?>">
+							<input type="button" name="upload-btn" value="<?php esc_html_e( $upload_btn, 'awp' ); ?>" class="upload-btn" data-id="followup_aftersales_img_3">
+						</div>
+					</div>
+				</div>
+				<hr class="sep">
+				<div class="timer">
+					<label for="awp_notifications[followup_aftersales_day_3]"><?php esc_html_e( 'Send message after:', 'awp' ); ?></label>
+					<div class="input-with-hours">
+						<?php echo $timer_icon; ?>
+						<input id="awp_notifications[followup_aftersales_day_3]" class="admin_number regular-text admin_number upload-text" name="awp_notifications[followup_aftersales_day_3]" type="number" placeholder="<?php esc_html_e( '72', 'awp' ); ?>" value="<?php echo esc_attr( isset( $this->notif['followup_aftersales_day_3'] ) ? $this->notif['followup_aftersales_day_3'] : '' ); ?>">
+						<span class="hours-label">hours</span>
+					</div>
+				</div>
+			</div>
+			<div class="notification-form">
+				<div class="heading-bar">
+					<label for="awp_notifications[followup_aftersales_4]" class="notification-title"><?php esc_html_e( '#4 - Completed follow-up', 'awp' ); ?>
+						<span class="tooltip-text"><?php esc_html_e( 'Invite the customer to join your loyalty program for exclusive benefits and discounts.', 'awp' ); ?></span>
+					</label>
+					<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
+				</div>
+				<hr class="line">
+				<div class="notification">
+					<div class="form">
+						<div class="dropdowns">
+							<!-- Placeholder Dropdown Container -->
+							<div class="placeholder-container"></div>
+						</div>
+						<!-- Add textareas for  English messages -->
+						<textarea id="awp_notifications[followup_aftersales_4]" name="awp_notifications[followup_aftersales_4]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['followup_aftersales_4'] ) ? esc_textarea( $this->notif['followup_aftersales_4'] ) : ''; ?></textarea>
+						<div class="upload-field">
+							<input type="text" name="awp_notifications[followup_aftersales_img_4]" placeholder="<?php esc_html_e( $img_format, 'awp' ); ?>" class="image_url regular-text followup_aftersales_img_4 upload-text" value="<?php echo esc_attr( isset( $this->notif['followup_aftersales_img_4'] ) ? $this->notif['followup_aftersales_img_4'] : '' ); ?>">
+							<input type="button" name="upload-btn" value="<?php esc_html_e( $upload_btn, 'awp' ); ?>" class="upload-btn" data-id="followup_aftersales_img_4">
+						</div>
+					</div>
+				</div>
+				<hr class="sep">
+				<div class="timer">
+					<label for="awp_notifications[followup_aftersales_day_4]"><?php esc_html_e( 'Send message after:', 'awp' ); ?></label>
+					<div class="input-with-hours">
+						<?php echo $timer_icon; ?>
+						<input id="awp_notifications[followup_aftersales_day_4]" class="admin_number regular-text admin_number upload-text" name="awp_notifications[followup_aftersales_day_4]" type="number" placeholder="<?php esc_html_e( '96', 'awp' ); ?>" value="<?php echo esc_attr( isset( $this->notif['followup_aftersales_day_4'] ) ? $this->notif['followup_aftersales_day_4'] : '' ); ?>">
+						<span class="hours-label">hours</span>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>              
 </div>  
@@ -1192,7 +1192,7 @@ $timer_icon = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" vi
 </footer>
 
 
-<?php
+		<?php
 	}
 
 	public function abandoned_cart_settings() {
@@ -1201,43 +1201,43 @@ $timer_icon = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" vi
 
 	<div class="info-banner">
 		<p class="banner-text"><?php esc_html_e( 'Target visitors who abandoned their shopping carts after entering their details but did not complete the purchase.', 'awp' ); ?></p>
-		 <?php
-        if ( is_plugin_active( 'woo-save-abandoned-carts/cartbounty-abandoned-carts.php' ) ) {
-        ?>
-    	<input type="submit" class="button-primarywa saveit top" value="<?php esc_html_e( 'Save Changes', 'awp' ); ?>">
-    	 <?php
-        }
-        ?>
+		<?php
+		if ( is_plugin_active( 'woo-save-abandoned-carts/cartbounty-abandoned-carts.php' ) ) {
+			?>
+		<input type="submit" class="button-primarywa saveit top" value="<?php esc_html_e( 'Save Changes', 'awp' ); ?>">
+			<?php
+		}
+		?>
 	</div>
 	<hr class="line">
 	<div class="tab">
 	  
-        <div class="form-table awp-table">
-         <?php
-    if (!is_plugin_active('woo-save-abandoned-carts/cartbounty-abandoned-carts.php')) {
-        printf(
-            __(
-                '<div class="hint-head"><span>Enable Abandoned Cart Notifications</span></div><div class="hint-info"><p class="desc">Install the <strong>Cartbounty plugin</strong> to activate notifications for abandoned carts.</p><a href="%s" class="banner-cta">Install Cartbounty</a></div>',
-                'awp'
-            ),
-            admin_url('plugin-install.php?s=Cartbounty%20Abandoned%20Cart&tab=search&type=term')
-        );
-    }
-    ?>
-        </div>
-        <?php
-        if ( is_plugin_active( 'woo-save-abandoned-carts/cartbounty-abandoned-carts.php' ) ) {
-        ?>
-          
-		  <?php
-$blank = __("leave blank to deactivate", "awp");
-$txt_placeholder = __("Write your message...", "awp");
-$img_format = __("Accepts .png, .jpg, .jpeg", "awp");
-$upload_btn = __("Upload image", "awp");
-$timer_icon = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="timer-icon"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v5.414l3.293 3.293 1.414-1.414L13 11.586z"></path></svg>';
+		<div class="form-table awp-table">
+		<?php
+		if ( ! is_plugin_active( 'woo-save-abandoned-carts/cartbounty-abandoned-carts.php' ) ) {
+			printf(
+				__(
+					'<div class="hint-head"><span>Enable Abandoned Cart Notifications</span></div><div class="hint-info"><p class="desc">Install the <strong>Cartbounty plugin</strong> to activate notifications for abandoned carts.</p><a href="%s" class="banner-cta">Install Cartbounty</a></div>',
+					'awp'
+				),
+				admin_url( 'plugin-install.php?s=Cartbounty%20Abandoned%20Cart&tab=search&type=term' )
+			);
+		}
+		?>
+		</div>
+		<?php
+		if ( is_plugin_active( 'woo-save-abandoned-carts/cartbounty-abandoned-carts.php' ) ) {
+			?>
+		  
+			<?php
+			$blank           = __( 'leave blank to deactivate', 'awp' );
+			$txt_placeholder = __( 'Write your message...', 'awp' );
+			$img_format      = __( 'Accepts .png, .jpg, .jpeg', 'awp' );
+			$upload_btn      = __( 'Upload image', 'awp' );
+			$timer_icon      = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="timer-icon"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v5.414l3.293 3.293 1.414-1.414L13 11.586z"></path></svg>';
 
-?>
-        
+			?>
+		
 	<div class="notification-form english hint">
 		<div class="hint-box">
 			<label for="awp_notifications" class="hint-title"><?php esc_html_e( 'Abandoned cart notifications', 'awp' ); ?></label>
@@ -1245,55 +1245,55 @@ $timer_icon = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" vi
 		</div>
 	</div>
 
-        <div class="notification-form">
-        	<div class="heading-bar">
-        		<label for="awp_notifications[followup_abandoned]" class="notification-title"><?php esc_html_e( '#1 - Abandoned cart follow-up', 'awp' ); ?>
-                    <span class="tooltip-text"><?php esc_html_e( ' ', 'awp' ); ?></span>
-                </label>
-        		<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
-        	</div>
-        	<hr class="line">
-        	<div class="notification">
-        		<div class="form">
-        		    <div class="dropdowns">
-        		        <!-- Placeholder Dropdown Container -->
-                        <div class="placeholder-containerab"></div>
-                    </div>
-        			<!-- Add textareas for  English messages -->
-        			<textarea id="awp_notifications[followup_abandoned]" name="awp_notifications[followup_abandoned]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['followup_abandoned'] ) ? esc_textarea( $this->notif['followup_abandoned'] ) : ''; ?></textarea>
-        			<div class="upload-field">
-        				<input type="text" name="awp_notifications[followup_abandoned_img]" placeholder="<?php esc_html_e( $img_format, 'awp' ); ?>" class="image_url regular-text followup_abandoned_img upload-text" value="<?php echo esc_attr( isset( $this->notif['followup_abandoned_img'] ) ? $this->notif['followup_abandoned_img'] : '' ); ?>">
-        				<input type="button" name="upload-btn" value="<?php esc_html_e( $upload_btn, 'awp' ); ?>" class="upload-btn" data-id="followup_abandoned_img">
-        			</div>
-        		</div>
-        	</div>
-        	<hr class="sep">
-        	<div class="timer">
-        		<label for="awp_notifications[followup_abandoned_day]"><?php esc_html_e( 'Send message after:', 'awp' ); ?></label>
-        		<div class="input-with-hours">
-        		    <?php echo $timer_icon; ?>
-        		    <input id="awp_notifications[followup_abandoned_day]" class="admin_number regular-text admin_number upload-text" name="awp_notifications[followup_abandoned_day]" type="number" placeholder="<?php esc_html_e( '24', 'awp' ); ?>" value="<?php echo esc_attr( isset( $this->notif['followup_abandoned_day'] ) ? $this->notif['followup_abandoned_day'] : '' ); ?>">
-                    <span class="hours-label">hours</span>
-        		</div>
-        	</div>
-        </div>
+		<div class="notification-form">
+			<div class="heading-bar">
+				<label for="awp_notifications[followup_abandoned]" class="notification-title"><?php esc_html_e( '#1 - Abandoned cart follow-up', 'awp' ); ?>
+					<span class="tooltip-text"><?php esc_html_e( ' ', 'awp' ); ?></span>
+				</label>
+				<p class="deactive-hint"><em><?php esc_html_e( $blank, 'awp' ); ?></em></p>
+			</div>
+			<hr class="line">
+			<div class="notification">
+				<div class="form">
+					<div class="dropdowns">
+						<!-- Placeholder Dropdown Container -->
+						<div class="placeholder-containerab"></div>
+					</div>
+					<!-- Add textareas for  English messages -->
+					<textarea id="awp_notifications[followup_abandoned]" name="awp_notifications[followup_abandoned]" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"><?php echo isset( $this->notif['followup_abandoned'] ) ? esc_textarea( $this->notif['followup_abandoned'] ) : ''; ?></textarea>
+					<div class="upload-field">
+						<input type="text" name="awp_notifications[followup_abandoned_img]" placeholder="<?php esc_html_e( $img_format, 'awp' ); ?>" class="image_url regular-text followup_abandoned_img upload-text" value="<?php echo esc_attr( isset( $this->notif['followup_abandoned_img'] ) ? $this->notif['followup_abandoned_img'] : '' ); ?>">
+						<input type="button" name="upload-btn" value="<?php esc_html_e( $upload_btn, 'awp' ); ?>" class="upload-btn" data-id="followup_abandoned_img">
+					</div>
+				</div>
+			</div>
+			<hr class="sep">
+			<div class="timer">
+				<label for="awp_notifications[followup_abandoned_day]"><?php esc_html_e( 'Send message after:', 'awp' ); ?></label>
+				<div class="input-with-hours">
+					<?php echo $timer_icon; ?>
+					<input id="awp_notifications[followup_abandoned_day]" class="admin_number regular-text admin_number upload-text" name="awp_notifications[followup_abandoned_day]" type="number" placeholder="<?php esc_html_e( '24', 'awp' ); ?>" value="<?php echo esc_attr( isset( $this->notif['followup_abandoned_day'] ) ? $this->notif['followup_abandoned_day'] : '' ); ?>">
+					<span class="hours-label">hours</span>
+				</div>
+			</div>
+		</div>
 
-        <?php
-        }
-        ?>
+			<?php
+		}
+		?>
 
 	</div>
 	
 			<?php
-        if ( is_plugin_active( 'woo-save-abandoned-carts/cartbounty-abandoned-carts.php' ) ) {
-        ?>  
-		<footer class="awp-panel-footer">
+			if ( is_plugin_active( 'woo-save-abandoned-carts/cartbounty-abandoned-carts.php' ) ) {
+				?>
+				<footer class="awp-panel-footer">
 				<input type="submit" class="button-primarywa"
 						value="<?php esc_html_e( 'Save Changes', 'awp' ); ?>">
 			</footer>
-			<?php
-        }
-        ?>
+				<?php
+			}
+			?>
 		<?php
 	}
 
@@ -1316,39 +1316,39 @@ $timer_icon = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" vi
 	<hr class="line">
 
 		
-	<?php
-$blank = __("leave blank to deactivate", "awp");
-$txt_placeholder = __("Write your message...", "awp");
-$img_format = __("Accepts .png, .jpg, .jpeg", "awp");
-$upload_btn = __("Upload image", "awp");
-?>
+		<?php
+		$blank           = __( 'leave blank to deactivate', 'awp' );
+		$txt_placeholder = __( 'Write your message...', 'awp' );
+		$img_format      = __( 'Accepts .png, .jpg, .jpeg', 'awp' );
+		$upload_btn      = __( 'Upload image', 'awp' );
+		?>
 
 
 		<div class="awp-panel">
 
 
 <form method="post">    
-    <div class="notification-form msg">
-    	<div class="heading">
-    		<label for="awp_test-message" class="notification-title"><?php esc_html_e( 'Send WhatsApp message to:', 'awp' ); ?>
-                <span class="tooltip-text"><?php esc_html_e( 'You can send a WhatsApp message to an individual customer directly from here.', 'awp' ); ?></span>
-            </label>
-            <input id="awp_test_number" class="admin_number regular-text admin_number upload-text" name="awp_test_number" type="text">
-    	</div>
-    	<hr class="divi">
-    	<div class="notification">
-    		<div class="form">
-    			<!-- Add textareas for  English messages -->
-    			<textarea id="awp_test_message" name="awp_test_message" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"></textarea>
-    			<div class="upload-field">
-    				<input type="text" name="awp_test_image" placeholder="<?php esc_html_e( $img_format, 'awp' ); ?>" class="image_url regular-text awp-test-image upload-text">
-    				<input type="button" name="upload-btn" value="<?php esc_html_e( $upload_btn, 'awp' ); ?>" class="upload-btn" data-id="awp-test-image">
-    			</div>
-    		</div>
-    	</div>
-    	<hr class="divi">
+	<div class="notification-form msg">
+		<div class="heading">
+			<label for="awp_test-message" class="notification-title"><?php esc_html_e( 'Send WhatsApp message to:', 'awp' ); ?>
+				<span class="tooltip-text"><?php esc_html_e( 'You can send a WhatsApp message to an individual customer directly from here.', 'awp' ); ?></span>
+			</label>
+			<input id="awp_test_number" class="admin_number regular-text admin_number upload-text" name="awp_test_number" type="text">
+		</div>
+		<hr class="divi">
+		<div class="notification">
+			<div class="form">
+				<!-- Add textareas for  English messages -->
+				<textarea id="awp_test_message" name="awp_test_message" cols="50" rows="5" class="awp-emoji" placeholder="<?php esc_html_e( $txt_placeholder, 'awp' ); ?>"></textarea>
+				<div class="upload-field">
+					<input type="text" name="awp_test_image" placeholder="<?php esc_html_e( $img_format, 'awp' ); ?>" class="image_url regular-text awp-test-image upload-text">
+					<input type="button" name="upload-btn" value="<?php esc_html_e( $upload_btn, 'awp' ); ?>" class="upload-btn" data-id="awp-test-image">
+				</div>
+			</div>
+		</div>
+		<hr class="divi">
 		<input type="submit" name="awp_send_test" class="button-primarywa" value="<?php esc_html_e( 'Send Message', 'awp' ); ?>">
-    </div>
+	</div>
 
 
 </form>
@@ -1430,22 +1430,22 @@ $upload_btn = __("Upload image", "awp");
 	<div class="wrap" id="awp-wrap">
 		<div class="form-wrapper">
 			<div class="awp-tab-wrapper">
-			    <div class="hint-inf mob">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" style="fill: rgba(0, 68, 68, 1);transform: ;msFilter:;" class="alert-icon"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M11 11h2v6h-2zm0-4h2v2h-2z"></path></svg>
-                    <p class="desc"><?php esc_html_e( "To view your wawp log, please browse from your computer.", 'awp' ); ?>
-                    </p>
-                </div>
-			    <div class="hint-inf">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" style="fill: rgba(0, 68, 68, 1);transform: ;msFilter:;" class="alert-icon"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M11 11h2v6h-2zm0-4h2v2h-2z"></path></svg>
-                    <p class="desc"><?php esc_html_e( "Wawp Log only counts notification messages, we'll release a new update to count login and checkout confirmation messages.", 'awp' ); ?>
-                    </p>
-                </div>
+				<div class="hint-inf mob">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" style="fill: rgba(0, 68, 68, 1);transform: ;msFilter:;" class="alert-icon"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M11 11h2v6h-2zm0-4h2v2h-2z"></path></svg>
+					<p class="desc"><?php esc_html_e( 'To view your wawp log, please browse from your computer.', 'awp' ); ?>
+					</p>
+				</div>
+				<div class="hint-inf">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" style="fill: rgba(0, 68, 68, 1);transform: ;msFilter:;" class="alert-icon"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M11 11h2v6h-2zm0-4h2v2h-2z"></path></svg>
+					<p class="desc"><?php esc_html_e( "Wawp Log only counts notification messages, we'll release a new update to count login and checkout confirmation messages.", 'awp' ); ?>
+					</p>
+				</div>
 				<div class="search-container">
 					<label for="log-search"><?php esc_html_e( 'Search in log:', 'awp' ); ?></label>
 					<div style="display: flex; flex-direction: row; gap: 16px; align-items: center;">
-    					<input type="text" id="log-search" placeholder="<?php esc_html_e( 'Type to search...Date/WhatsApp Number/Message/Image Attachment/Status', 'awp' ); ?>">
-            			<a href="<?php echo admin_url( 'admin.php?page=awp-message-log&clear_logs=1' ); ?>" class="button log-clear"><?php esc_html_e( "Clear Logs", 'awp' ); ?></a>
-        			</div>
+						<input type="text" id="log-search" placeholder="<?php esc_html_e( 'Type to search...Date/WhatsApp Number/Message/Image Attachment/Status', 'awp' ); ?>">
+						<a href="<?php echo admin_url( 'admin.php?page=awp-message-log&clear_logs=1' ); ?>" class="button log-clear"><?php esc_html_e( 'Clear Logs', 'awp' ); ?></a>
+					</div>
 				</div>
 
 				<table class="wp-list-table widefat fixed striped table-view-list posts table-message-logs" style="margin:10px 0;">
@@ -1472,6 +1472,6 @@ $upload_btn = __("Upload image", "awp");
 							</div>
 		</div>
 	</div>
-        <?php
+		<?php
 	}
 }

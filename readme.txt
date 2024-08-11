@@ -1,11 +1,11 @@
 === Wawp — OTP Verification, Order Notifications, and Country Code Selector for WooCommerce ===
 
 Contributors: 101Gen, wawp, ahmedsafaa, omarsafaa
-Tags: whatsapp, notifications, OTP, sms, country code 
+Tags: whatsapp, notifications, WooCommerce WhatsApp, sms, country code 
 Requires at least: 3.0.1
 Tested up to: 6.6.1
 Requires PHP: 7.4
-Stable tag: 3.0.4
+Stable tag: 3.0.5
 License: GPLv3 or later
 License URI: https://opensource.org/licenses/GPL-3.0
 
@@ -145,6 +145,9 @@ Ready to dig deeper? Check out these resources:
 
 
 == Changelog ==
+
+= Version: 3.0.5 – Date: 11-08-2024 =
+<li><strong>Enhancement:</strong>Complete code optimization</li>
 
 = Version: 3.0.4 – Date: 08-08-2024 =
 <li><strong>Enhancement:</strong>Complete code optimization</li>

@@ -6,7 +6,7 @@
  */
 
 if ( $_POST ) {
-	$_settings  = get_option( 'wwo_settings' );
+	$_settings                         = get_option( 'wwo_settings' );
 	$_POST['general']['awp_validated'] = $_settings['general']['awp_validated'];
 	update_option( 'wwo_settings', $_POST );
 }
@@ -31,9 +31,9 @@ $general_show = '';
 			<div class="wp-tab-panels">
 				<form action="" method="POST" id="wwo_settings" class="<?php echo $general_show; ?>">
 					<?php
-					require 'settings/general.php';
-					require 'settings/login.php';
-					require 'settings/register.php';
+					require_once 'settings/general.php';
+					require_once 'settings/login.php';
+					require_once 'settings/register.php';
 					?>
 					<button type="submit" class="button-primarywa submit"><?php esc_html_e( 'Save Settings', 'awp' ); ?></button>
 				</form>
@@ -43,7 +43,7 @@ $general_show = '';
 		</div>
 </div>
 
-        <?php
+		<?php
 
 
 
